@@ -1,0 +1,1184 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Progress Log">
+<meta name="theme-color" content="#1F3A5C">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlByb2dyZXNzIExvZyIsICJzaG9ydF9uYW1lIjogIlByb2dyZXNzIiwgInN0YXJ0X3VybCI6ICIuIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNGOEY5RkIiLCAidGhlbWVfY29sb3IiOiAiIzFGM0E1QyIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQWdBQUFBSUFDQUlBQUFCN0drT3RBQUFKWlVsRVFWUjQydTNkUFc2VFdSU0FZVHZLUGx6U3BhRnp4dzZ5QUVzUlMySUZLRHZJRG1pcDA3RWJpa2dSQ29qWXNmMzkzUGQ1eWhITWpLOUg1LzNPdFpsc2QvdkRCb0NlRzBjQUlBQUFDQUFBQWdDQUFBQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFnQUFBSUFBQUNBQUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQUlBQUFDQUFBQWdDQUFBQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFnQUFBSUFBQUNBQUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQUlBQUFDQUFBQWdDQUFBQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFnQUFBSUFBQUNBQUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQWdBQUFDQUFBQWdDQUFBQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFnQUFBSUFBQUNBQUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQWdBQUFDQUFBQWdDQUFBQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFnQUFBSUFBQUNBQUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQWdBQUFJQUFBQWdDQUFBQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFnQUFBSUFBQUNBQUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQWdBQUFJQUFBQWdDQUFBQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFnQUFBSUFBQUNBQUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBSnprMWhHYzZkZVA3My8veFU5ZnZqb1pZT0cydS8zQktWeHE3aXNCc0NLdWdLNDQvVS82bFFBMmdFRkd2MVVBRUFEVFh3WUFBV2hQZnhrQUZzVm5BUE8weEdjRGdBRGtIdit2K3ZjRU9KNHJvUGtudFJzaHdBYlFEWXh0QUJBQUdRQ1lpQ3VnOStmeTlQOVFsMEtBRGNBMkFDQUFNZ0FnQURJQUlBQXlBQ0FBTWdBZ0FNTm53Q0VBNS9NMTBCVVBYTjhXQld3QTNUTFpCZ0FCa0FHQTA3Z0NPbmJJcnVMZjA2VVFJQURkQnNnQWNDUlhRR08yeXFVUVlBT0lMZ0cyQVVBQU5FQUdBQUdRQVJrQS91QXpnTkFrOWNFQVlBT29UMVdyQUNBQTZSTElBQWlBQU1nQVo3Mi96aEFCUUFicWI2aGpSQUJZWlFQTXI0dThsYzRRQVVBRzBtK2ZNMFFBa0lIdVc2WUJDQUF5MEgyUE5BQUJRQWFpNzRnQUlBQ01rSUh4WnRrMGI0RUdJQURJUVBmQU5RQUJRQWE2SjZ3QkNBQXlFRDFQQVVBQWtJSHVBV29BQXNDQURaaDl1cTNseERRQUFVQUdIQkVJQUdaYzRFQTBBQUZBQnRKelh3TVFBR1FnT3ZRMUFBRWdsNEZUSjEzbkJ4ZHJBQUtBREVSL1dyMEFJQUIwTTlDYyt4cUFBTkROQUJxQUFDQURhQUJ6dW5FRWhnamlqUTBBMHdRSlJ3Q1FBVFFBQVVBRzBBQUVBQmxBQXhpSEQ0RVRBOFZNQVd3QXRnSGJnQ1VBQkVBRzBBQUV3Q25JQU1lTTQ0bFBUQU1RQUdSZ1FZL2hHb0FBb0FHaG9hOEJDQUF5a0o3N0dvQUFJQVBSb2E4QkNBQXlrSjc3YzUyU0FDQUF5TUNDQnFnbEFBRkFCbHB6WHdNUUFHUWdPdlExQUFGQUJ0SnpYd01RQUdRZ092UTFBQUZBQnRKelh3TVFBRFRBdk5NQUJBQVphTTg0RFVBQWtJSHVVTE1ZSVFCb1FIU1dXUUlRQUdTZ083dzBnRlh3TTRHWmJSZ05QTGJHL3NObzJBRGdnNE9wODdocUQwQUFRQUkxZ0NWeUJRVGpUR1IzUVFnQWFBQUlBUFFhQUFJQVVaWUFCQUM2UzRBR0lBQ2dBU0FBb0FFZ0FLQUJJQUNnQVFnQW9BRUlBS0FCQ0FBd1RnTkFBQ0RLRW9BQVFIY0owQUFFQURRQUJBQTBBQUVBTkFBQkFEUUFBUUEwQUFFQXhtc0FBZ0JFV1FJRUFPZ3VBUm9nQUlBR0lBQ0FCaUFBZ0FZZ0FJQUdJQUNBQmlBQWdBWWdBTUE0RFVBQWdDaExnQUFBM1NWQUF3UUEwQUFFQU5BQUJBRFFBQVFBMEFBRUFOQUFCQUFZcndFSUFCQmxDUmpNZHJjL09BVXdsMjBlTmdCZ2ZhWWZ4MVlCQVFBMEFBRUFlZzFBQUlCb0F5d0JBZ0JvQUFJQTlCcUFBQUFhZ0FBQUpXNkJCQURvTGdFYUlBQkF0d0VJQUJCdGdDVkFBQUFOUUFDQVhnTVFBQ0RhQUV1QUFBQWFnQUFBSUFDQUpRQUJBRFFBQVFBMEFBRUFRQUFBU3dBQ0FHZ0FBZ0Nzc1FFSUFCQnRnQ1ZBQUlBdURSQUFJTG9FYUlBQUFPa0dJQUJBbENWQUFJRHVFcUFCQWdCMEc0QUFBRkdXQUFFQXVrdUFCZ2dBMEcwQUFnQkVHMkFKRUFDZ1N3TUVBSWd1QVJvZ0FFQzZBUWdBRUdVSkVBQ2d1d1JvZ0FBQTNRWWdBRUMwQVpZQUFRQzZORUFBZ09nU29BRUNBS1FiZ0FBQVVaWUFBUUM2UzRBR0NBRFFiUUFDQUVSWkFnUUE2QzRCR2lBQVFMY0JDQUFRYllBbFFBQ0FMZzBRQUNDNkJHaUFBQURwQmlBQVFKUWxRQUNBN2hLZ0FRSUFkQnVBQUFEUkJsZ0NCQURvMG9ETDJ1NzJCNmNBckdoQXYyNGJqL2ZQLy8rVkQwOTMzaFFCQUVab3dNOXZuOC81N1hyd3hxMGpBQmJ1ekxuLzZuVmpVQUliQUxEMEplQlNvOTlDSUFEQWFocHcxZEV2QXk5Y0FRSExNdG5vZi9GeUw5VE1nSytCQXBmMzRUOFdNUEgwZjVNQkFRQ1lwd0Z6VGY5c0Ezd0dBRnpSa1I4R3pEdjYzK2hjQjlrQWdKa3RhdnFuVmdFQkFLN28zWXVncFUzL1ZBTUVBSml0QWN1Yy9wMEdDQUF3anlWUC8wZ0RCQUNZWVFsWS92UXZORUFBZ0hrYWdBQUF1UWFzNWZGLytDVkFBSUJKcld2Nmo5MEFBUUJNLzJnREJBQWdTZ0FBRDlIUkpVQUFBR3dBQUI2ZlMwdUFBQURZQUFBOE9KZGVpd0FBMkFBQUVBQ0FTeG52MjVQRHZDSUJBTEFCQUNBQUFBZ0FBQUlBY0tKUi8wZktZN3d1QVFDd0FRQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFnQUFBSUFCQXpNUFRuZGNsQUFBSUFBQUNBSUFBQUNBQXdFREcreHg0bUZja0FBQTJBQUFFQU9DQ1Jyb0ZHdW0xQ0FDQURRREFnM1BtOFY4QUFHd0FBQjZmUzQvL0FnQmdBd0R3RUYxNi9CY0F3Q1NOVG44QkFNelQ2UFFYQUlBdUFRQThWaGNmL3dVQU1GdWowMThBQUJNMk92MEZBREJubzlOZkFBRFROanI5TjV2TmRyYy8rTzhQV0lMSCsyZWozd1lBV0FWTWZ3RUFOTUQwdnc1WFFNQVNUWFlkMUJ6OUFnQ2tNMUFlL1FJQVJETmc5QXNBMENxQnVTOEFRS1VISnI0QUFQQVB2Z1lLSUFBQUNBQUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQWdBQUFJQUFBQ0FBQUFnQ0FBQUFnQUFBSUFBQUNBSUFBQUNBQUFBZ0FBQUlBSUFBQUNBQUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQWdBQUFJQUFBQ0FBQUFnQ0FBQUFnQUFBSUFBQUNBSUFBQUNBQUFBZ0FBQUlBSUFDT0FFQUFBQkFBQUFRQUFBRUFRQUFBRUFBQUJBQUFBUUJBQUFBUUFBQUVBQUFCQUVBQUFCQUFBQVFBQUFFQVFBQUFFQUFBQkFBQUFRQkFBQUFRQUFBRUFFQUFBQkFBQUFRQUFBRUFRQUFBRUFBQUJBQUFBUUJBQUFBUUFBQUVBQUFCQUVBQUFCQUFBQVFBQUFFQVFBQUFFQUFBQkFBQUFRQkFBQUFRQUFBRUFFQUFBQkFBQUFRQUFBRUFRQUFBR01adkxiSWpkaXlxNTlBQUFBQUFTVVZPUks1Q1lJST0iLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3BuZyJ9XX0=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+
+<style>
+  :root{
+    --ink:#1C2430;
+    --ink-soft:#5B6675;
+    --bg-outer:#DCE1E8;
+    --paper:#F8F9FB;
+    --paper-2:#EEF1F5;
+    --line:#D6DBE3;
+    --primary-deep:#1F3A5C;
+    --primary:#2E6089;
+    --primary-light:#9FC6E0;
+    --primary-pale:#E4EEF6;
+    --accent:#C08A2E;
+    --accent-pale:#F3E6C9;
+    --alert:#B24444;
+    --alert-pale:#F1DAD8;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none!important;transition:none!important;}
+  }
+  html,body{margin:0;padding:0;height:100%;}
+  body{
+    background:var(--bg-outer);
+    font-family:'Archivo',sans-serif;
+    color:var(--ink);
+    height:100vh;
+    height:100dvh;
+    display:flex;
+    justify-content:center;
+    overflow:hidden;
+  }
+  #app-shell{
+    width:100%;
+    max-width:460px;
+    height:100%;
+    background:var(--paper);
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    box-shadow:0 0 40px rgba(28,36,48,0.15);
+    overflow:hidden;
+  }
+  #root{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    min-height:0;
+  }
+  h1,h2,h3{font-family:'Fraunces',serif;margin:0;}
+  button{font-family:inherit;}
+  input,select{font-family:inherit;}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+  /* ---------- Topbar ---------- */
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 18px 14px;
+    background:var(--primary-deep);
+    color:var(--paper);
+    flex-shrink:0;
+  }
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand svg{width:22px;height:22px;color:var(--primary-light);flex-shrink:0;}
+  .brand h1{font-size:1.15rem;font-weight:600;letter-spacing:.2px;color:var(--paper);}
+  .brand p{margin:1px 0 0;font-size:.72rem;color:var(--primary-light);text-transform:uppercase;letter-spacing:1px;font-family:'IBM Plex Mono',monospace;}
+  .icon-btn{
+    background:rgba(248,249,251,0.08);
+    border:1px solid rgba(248,249,251,0.25);
+    color:var(--paper);
+    width:38px;height:38px;border-radius:10px;
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+  }
+  .icon-btn svg{width:18px;height:18px;}
+  .icon-btn:hover{background:rgba(248,249,251,0.16);}
+
+  /* ---------- View / scroll area ---------- */
+  #view{flex:1;min-height:0;padding:18px 18px 24px;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+  .card{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:16px;
+    margin-bottom:14px;
+  }
+  .section-label{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.68rem;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    color:var(--ink-soft);
+    margin:0 0 10px;
+  }
+
+  /* ---------- Progress hero (signature) ---------- */
+  .marker-card{
+    background:linear-gradient(180deg,var(--primary-deep) 0%,var(--primary) 100%);
+    color:var(--paper);
+    border-radius:18px;
+    padding:22px 20px 18px;
+    position:relative;
+    overflow:hidden;
+    margin-bottom:16px;
+  }
+  .marker-card::before{
+    content:"";
+    position:absolute;top:-30px;right:-30px;width:130px;height:130px;
+    background:radial-gradient(circle,rgba(159,198,224,0.35),transparent 70%);
+  }
+  .marker-eyebrow{
+    font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:1.4px;
+    text-transform:uppercase;color:var(--primary-light);margin:0 0 6px;
+  }
+  .marker-number{
+    font-family:'Fraunces',serif;font-weight:700;font-size:3.1rem;line-height:1;
+    font-optical-sizing:auto;
+    display:flex;align-items:baseline;gap:8px;
+  }
+  .marker-number small{font-size:1.1rem;font-weight:600;color:var(--primary-light);}
+  .marker-sub{margin:8px 0 0;font-size:.85rem;color:rgba(248,249,251,0.85);}
+  .marker-badge{
+    display:inline-block;margin-top:10px;padding:4px 10px;border-radius:20px;
+    background:rgba(159,198,224,0.2);border:1px solid var(--primary-light);
+    font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--primary-light);
+  }
+
+  .progress-track{margin:22px 4px 4px;position:relative;}
+  .track-line{height:5px;background:rgba(248,249,251,0.25);border-radius:3px;position:relative;overflow:visible;}
+  .track-fill{height:100%;background:var(--primary-light);border-radius:3px;transition:width .6s ease;}
+  .dot{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:var(--paper);border:2px solid var(--primary-deep);
+    transform:translate(-50%,-50%);transition:left .6s ease;
+    box-shadow:0 2px 4px rgba(0,0,0,0.3);
+  }
+  .track-ends{display:flex;justify-content:space-between;margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:.68rem;color:rgba(248,249,251,0.75);}
+
+  /* ---------- Stat row ---------- */
+  .stat-row{display:flex;gap:10px;margin-bottom:16px;}
+  .stat-box{
+    flex:1;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;
+    padding:12px 10px;text-align:center;
+  }
+  .stat-box .val{font-family:'Fraunces',serif;font-weight:700;font-size:1.35rem;}
+  .stat-box .val.pos{color:var(--primary);}
+  .stat-box .val.neg{color:var(--alert);}
+  .stat-box .lbl{font-family:'IBM Plex Mono',monospace;font-size:.62rem;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-soft);margin-top:3px;}
+
+  /* ---------- Due card ---------- */
+  .due-card{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .due-card .txt .t1{font-size:.68rem;text-transform:uppercase;letter-spacing:1px;font-family:'IBM Plex Mono',monospace;color:var(--ink-soft);}
+  .due-card .txt .t2{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;margin-top:2px;}
+  .due-card .txt .t2.overdue{color:var(--alert);}
+  .pill-btn{
+    background:var(--primary);color:var(--paper);border:none;border-radius:10px;
+    padding:9px 14px;font-weight:600;font-size:.82rem;cursor:pointer;white-space:nowrap;
+  }
+  .pill-btn:hover{background:var(--primary-deep);}
+  .pill-btn.ghost{background:transparent;border:1.5px solid var(--primary);color:var(--primary);}
+  .pill-btn.danger{background:var(--alert);}
+  .pill-btn.danger.ghost{background:transparent;border:1.5px solid var(--alert);color:var(--alert);}
+
+  /* ---------- Sparkline ---------- */
+  .spark-wrap{margin-top:4px;}
+  .spark-wrap svg{width:100%;height:56px;display:block;}
+
+  /* ---------- Forms ---------- */
+  .form-grid{display:flex;flex-direction:column;gap:10px;}
+  .form-row{display:flex;gap:10px;}
+  .field{flex:1;display:flex;flex-direction:column;gap:5px;}
+  .field label{font-size:.7rem;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-soft);}
+  .field input,.field select{
+    border:1.5px solid var(--line);border-radius:10px;padding:10px 11px;
+    font-size:.95rem;background:var(--paper);color:var(--ink);
+  }
+  .field input:focus,.field select:focus{border-color:var(--primary);}
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px;}
+  .chip{
+    border:1.5px solid var(--line);background:var(--paper);border-radius:20px;
+    padding:5px 11px;font-size:.78rem;font-family:'IBM Plex Mono',monospace;cursor:pointer;color:var(--ink-soft);
+  }
+  .chip:hover, .chip.selected{border-color:var(--accent);color:var(--accent);background:var(--accent-pale);}
+  .form-actions{display:flex;gap:8px;margin-top:2px;}
+  .form-actions .pill-btn{flex:1;}
+  .err-msg{color:var(--alert);font-size:.78rem;margin-top:-2px;}
+
+  /* ---------- Toggle row (check-in shot switch) ---------- */
+  .toggle-row{display:flex;align-items:center;gap:10px;padding:6px 0;}
+  .toggle-row input[type="checkbox"]{width:20px;height:20px;accent-color:var(--primary);flex-shrink:0;}
+  .toggle-row label{font-size:.88rem;font-weight:600;color:var(--ink);}
+  #shotFields{display:flex;flex-direction:column;gap:10px;padding-top:10px;margin-top:2px;border-top:1px dashed var(--line);}
+  .hint-text{font-size:.78rem;color:var(--ink-soft);text-align:center;margin:-6px 0 14px;}
+
+  /* ---------- Entry lists ---------- */
+  .entry-row{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:11px 4px;border-bottom:1px solid var(--line);cursor:pointer;
+  }
+  .entry-row:last-child{border-bottom:none;}
+  .entry-row:hover{background:var(--primary-pale);}
+  .entry-left{display:flex;flex-direction:column;gap:2px;}
+  .entry-date{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--ink-soft);}
+  .entry-main{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;display:flex;align-items:center;gap:6px;}
+  .entry-main svg{width:15px;height:15px;color:var(--ink-soft);flex-shrink:0;}
+  .entry-tag{font-size:.7rem;color:var(--ink-soft);}
+  .entry-right{display:flex;align-items:center;gap:10px;}
+  .entry-delta{font-family:'IBM Plex Mono',monospace;font-size:.78rem;}
+  .entry-delta.pos{color:var(--primary);}
+  .entry-delta.neg{color:var(--alert);}
+  .del-btn{
+    width:26px;height:26px;border-radius:50%;border:1px solid var(--line);background:var(--paper);
+    color:var(--ink-soft);font-size:.95rem;line-height:1;cursor:pointer;
+  }
+  .del-btn:hover{background:var(--alert);color:var(--paper);border-color:var(--alert);}
+  .empty-state{text-align:center;padding:30px 10px;color:var(--ink-soft);}
+  .empty-state svg{width:34px;height:34px;color:var(--primary-light);margin-bottom:8px;}
+  .empty-state p{margin:4px 0 0;font-size:.85rem;}
+
+  /* ---------- Trends ---------- */
+  .range-toggle{display:flex;gap:6px;margin-bottom:14px;}
+  .range-toggle button{
+    flex:1;padding:8px;border-radius:10px;border:1.5px solid var(--line);background:var(--paper);
+    color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;font-size:.78rem;cursor:pointer;
+  }
+  .range-toggle button.active{background:var(--primary);border-color:var(--primary);color:var(--paper);}
+  .chart-legend{display:flex;gap:14px;margin-top:6px;flex-wrap:wrap;}
+  .legend-item{display:flex;align-items:center;gap:5px;font-size:.72rem;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;}
+  .legend-swatch{width:14px;height:3px;border-radius:2px;}
+  .chip-mini{
+    display:inline-flex;flex-direction:column;gap:1px;background:var(--paper);border:1px solid var(--line);
+    border-radius:10px;padding:7px 10px;margin:0 6px 6px 0;
+  }
+  .chip-mini .d1{font-family:'IBM Plex Mono',monospace;font-size:.68rem;color:var(--ink-soft);}
+  .chip-mini .d2{font-weight:600;font-size:.85rem;}
+  .chip-scroll{display:flex;flex-wrap:wrap;}
+
+  /* ---------- Tabbar ---------- */
+  .tabbar{
+    flex-shrink:0;display:flex;background:var(--paper);
+    border-top:1px solid var(--line);
+    padding:8px 6px calc(8px + env(safe-area-inset-bottom));
+  }
+  .tab-btn{
+    flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;
+    background:none;border:none;color:var(--ink-soft);cursor:pointer;padding:6px 2px;border-radius:10px;
+  }
+  .tab-btn svg{width:20px;height:20px;}
+  .tab-btn span{font-size:.63rem;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.4px;}
+  .tab-btn.active{color:var(--primary-deep);background:var(--primary-pale);}
+
+  /* ---------- Modal ---------- */
+  .modal-overlay{
+    position:fixed;inset:0;background:rgba(28,36,48,0.55);z-index:50;
+    display:flex;align-items:flex-end;justify-content:center;
+  }
+  .modal-sheet{
+    background:var(--paper);width:100%;max-width:460px;border-radius:20px 20px 0 0;
+    padding:20px 20px calc(20px + env(safe-area-inset-bottom));max-height:88vh;overflow-y:auto;
+  }
+  .modal-sheet h2{font-size:1.2rem;margin-bottom:4px;}
+  .modal-sub{font-size:.8rem;color:var(--ink-soft);margin:0 0 16px;}
+  .unit-toggle{display:flex;border:1.5px solid var(--line);border-radius:10px;overflow:hidden;}
+  .unit-toggle button{flex:1;padding:9px;border:none;background:var(--paper);color:var(--ink-soft);cursor:pointer;font-weight:600;}
+  .unit-toggle button.active{background:var(--primary);color:var(--paper);}
+
+  /* ---------- Onboarding ---------- */
+  #onboard{padding:26px 22px 40px;height:100%;overflow-y:auto;-webkit-overflow-scrolling:touch;display:flex;flex-direction:column;justify-content:center;}
+  #onboard h1{font-size:1.7rem;color:var(--primary-deep);margin-bottom:6px;}
+  #onboard p.lead{color:var(--ink-soft);margin:0 0 20px;font-size:.92rem;}
+
+  /* ---------- Lock screen ---------- */
+  #lockScreen{
+    height:100%;overflow-y:auto;-webkit-overflow-scrolling:touch;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:30px 26px 40px;text-align:center;background:var(--primary-deep);color:var(--paper);
+  }
+  .lock-icon-wrap{
+    width:58px;height:58px;border-radius:50%;background:rgba(248,249,251,0.12);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 16px;
+  }
+  .lock-icon-wrap svg{width:26px;height:26px;color:var(--primary-light);}
+  #lockScreen h1{color:var(--paper);font-size:1.4rem;margin-bottom:6px;}
+  #lockScreen p.lead{color:rgba(248,249,251,0.75);font-size:.85rem;margin-bottom:22px;}
+  #lockScreen input{
+    text-align:center;letter-spacing:3px;font-size:1.15rem;padding:14px;border-radius:12px;
+    border:none;margin-bottom:12px;width:100%;background:var(--paper);color:var(--ink);
+  }
+  #lockScreen .err-msg{color:#F3C6C2;margin-bottom:10px;}
+  #lockScreen .reset-link{
+    margin-top:20px;background:none;border:none;color:rgba(248,249,251,0.65);
+    font-size:.78rem;text-decoration:underline;cursor:pointer;
+  }
+
+  .storage-warn{
+    background:var(--alert);color:#fff;padding:10px 16px;font-size:.76rem;text-align:center;
+    line-height:1.4;
+  }
+
+  .toast{
+    position:fixed;bottom:90px;left:50%;transform:translateX(-50%);
+    background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:10px;
+    font-size:.82rem;z-index:80;opacity:0;pointer-events:none;transition:opacity .3s ease;
+  }
+  .toast.show{opacity:1;}
+
+  .loading-wrap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--ink-soft);gap:10px;}
+  .loading-wrap svg{width:30px;height:30px;color:var(--primary);animation:spin 1s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+</style>
+
+<div id="app-shell">
+  <div id="root"></div>
+</div>
+<div id="modalRoot"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ============== ICONS ============== */
+  const ICONS = {
+    target: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="4.4"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>`,
+    plusCircle: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>`,
+    list: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 3.5h6v2H9z"/><line x1="8" y1="10.5" x2="16" y2="10.5"/><line x1="8" y1="14.5" x2="16" y2="14.5"/><line x1="8" y1="18.5" x2="12" y2="18.5"/></svg>`,
+    scale: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16a8 8 0 0 1 16 0"/><line x1="12" y1="16" x2="15.2" y2="10.8"/><line x1="3" y1="16" x2="21" y2="16"/></svg>`,
+    syringe: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="3" x2="18" y2="6"/><line x1="19.5" y1="7.5" x2="17" y2="5"/><path d="M16 6 8 14"/><path d="M8 14l-4.5 4.5"/><path d="M13 9l2 2"/><path d="M11 11l2 2"/><path d="M15 5l4 4-2.5 2.5-4-4Z"/></svg>`,
+    trend: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,17 10,11 14,15 20,6"/><polyline points="14,6 20,6 20,12"/></svg>`,
+    gear: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a7.9 7.9 0 0 0 0-6l2-1.7-2-3.4-2.5 1a8 8 0 0 0-2.1-1.2L14.4 1h-4l-.4 2.7a8 8 0 0 0-2.1 1.2l-2.5-1-2 3.4L5.4 9a7.9 7.9 0 0 0 0 6l-2 1.7 2 3.4 2.5-1a8 8 0 0 0 2.1 1.2l.4 2.7h4l.4-2.7a8 8 0 0 0 2.1-1.2l2.5 1 2-3.4Z"/></svg>`,
+    lock: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>`,
+    spinner: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 2a10 10 0 0 1 10 10"/></svg>`
+  };
+
+  /* ============== STATE ============== */
+  let settings = null;
+  let weightEntries = [];
+  let injections = [];
+  let storageOK = true;
+  let activeTab = 'home';
+  let editingWeightId = null;
+  let editingShotId = null;
+  let checkinPrefillShot = false;
+  let trendsRange = 90;
+  let chartRef = null;
+  let barChartRef = null;
+
+  const $root = document.getElementById('root');
+  const $modalRoot = document.getElementById('modalRoot');
+  const $toast = document.getElementById('toast');
+
+  /* ============== STORAGE (localStorage, on-device only) ============== */
+  const LS_PREFIX = 'pl_';
+  function lsGet(key){
+    try{
+      const v = localStorage.getItem(LS_PREFIX+key);
+      return v ? JSON.parse(v) : null;
+    }catch(e){ return null; }
+  }
+  function lsSet(key, val){
+    try{
+      localStorage.setItem(LS_PREFIX+key, JSON.stringify(val));
+      return true;
+    }catch(e){
+      showToast("Couldn't save — storage may be full");
+      return false;
+    }
+  }
+  function lsRemove(key){
+    try{ localStorage.removeItem(LS_PREFIX+key); }catch(e){}
+  }
+  async function storGet(key){ return lsGet(key); }
+  async function storSet(key, val){ return lsSet(key, val); }
+  function testStorage(){
+    try{
+      const testKey = LS_PREFIX+'__test__';
+      localStorage.setItem(testKey, '1');
+      const ok = localStorage.getItem(testKey) === '1';
+      localStorage.removeItem(testKey);
+      return ok;
+    }catch(e){ return false; }
+  }
+  function warningBanner(){
+    return storageOK ? '' : `<div class="storage-warn">This page can't save anything right now — including your passcode and entries. Open it directly in Safari (not a preview) for saving to work.</div>`;
+  }
+
+  function showToast(msg){
+    $toast.textContent = msg;
+    $toast.classList.add('show');
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(()=> $toast.classList.remove('show'), 2400);
+  }
+
+  /* ============== PIN LOCK ============== */
+  const DEFAULT_PIN = '1217';
+  function getPin(){ return lsGet('pin') || DEFAULT_PIN; }
+
+  /* ============== UTILS ============== */
+  function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
+  function todayISO(){ return new Date().toISOString().slice(0,10); }
+  function round1(n){ return Math.round(n*10)/10; }
+  function toDate(iso){ return new Date(iso+"T00:00:00"); }
+  function daysBetween(a,b){ return Math.round((toDate(b)-toDate(a))/86400000); }
+  function fmtDateShort(iso){ return toDate(iso).toLocaleDateString('en-US',{month:'short',day:'numeric'}); }
+  function fmtDateFull(iso){ return toDate(iso).toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}); }
+  function unitLabel(){ return settings.units === 'kg' ? 'kg' : 'lbs'; }
+  function sortedWeights(){ return [...weightEntries].sort((a,b)=> a.date.localeCompare(b.date)); }
+  function sortedShots(){ return [...injections].sort((a,b)=> a.date.localeCompare(b.date)); }
+  function latestWeight(){ const s = sortedWeights(); return s.length ? s[s.length-1] : null; }
+  function escapeHtml(s){ return s.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+  /* ============== COMPUTATION ============== */
+  function currentWeightVal(){ const lw = latestWeight(); return lw ? lw.weight : settings.startWeight; }
+  function progressPercent(){
+    const start = settings.startWeight, goal = settings.goalWeight, cur = currentWeightVal();
+    if(start === goal) return 100;
+    let pct = ((start - cur) / (start - goal)) * 100;
+    if(!isFinite(pct)) pct = 0;
+    return Math.max(0, Math.min(100, pct));
+  }
+  function weeklyRateStat(){
+    const s = sortedWeights();
+    if(s.length < 2) return null;
+    const last = s[s.length-1];
+    let ref = null;
+    for(let i=s.length-2;i>=0;i--){
+      const gap = daysBetween(s[i].date, last.date);
+      if(gap >= 3){ ref = s[i]; break; }
+    }
+    if(!ref) return null;
+    const gapDays = daysBetween(ref.date, last.date);
+    const delta = ref.weight - last.weight;
+    return round1(delta * (7/gapDays));
+  }
+  function avgWeeklyPace(){
+    if(!latestWeight()) return null;
+    const daysSinceStart = daysBetween(settings.startDate, todayISO());
+    if(daysSinceStart < 7) return null;
+    const totalLost = settings.startWeight - currentWeightVal();
+    return round1(totalLost / (daysSinceStart/7));
+  }
+  function nextInjectionDue(){
+    const s = sortedShots();
+    if(!s.length) return null;
+    const last = s[s.length-1];
+    const d = toDate(last.date);
+    d.setDate(d.getDate() + (settings.intervalDays||7));
+    return d.toISOString().slice(0,10);
+  }
+  function startOfWeek(iso){
+    const d = toDate(iso);
+    const day = d.getDay();
+    const diff = (day===0? -6 : 1-day);
+    d.setDate(d.getDate()+diff);
+    return d.toISOString().slice(0,10);
+  }
+  function weeklyBuckets(){
+    const s = sortedWeights();
+    const map = {};
+    s.forEach(e=>{
+      const key = startOfWeek(e.date);
+      if(!map[key] || e.date > map[key].date) map[key] = e;
+    });
+    const keys = Object.keys(map).sort();
+    return keys.map(k=>({week:k, weight:map[k].weight}));
+  }
+
+  /* ============== SHELL / TABS ============== */
+  function renderShell(){
+    $root.innerHTML = `
+      ${warningBanner()}
+      <header class="topbar">
+        <div class="brand">
+          ${ICONS.target}
+          <div>
+            <h1>Progress Log</h1>
+            <p>Weight &amp; injection tracker</p>
+          </div>
+        </div>
+        <button class="icon-btn" id="settingsBtn" aria-label="Settings">${ICONS.gear}</button>
+      </header>
+      <main id="view" class="view"></main>
+      <nav class="tabbar" id="tabbar">
+        ${tabBtn('home', ICONS.target, 'Home')}
+        ${tabBtn('checkin', ICONS.plusCircle, 'Check-in')}
+        ${tabBtn('data', ICONS.trend, 'Data')}
+      </nav>
+    `;
+    document.getElementById('settingsBtn').addEventListener('click', openSettingsModal);
+    document.querySelectorAll('.tab-btn').forEach(b=>{
+      b.addEventListener('click', ()=>{ activeTab = b.dataset.tab; renderTab(); });
+    });
+    renderTab();
+  }
+  function tabBtn(id, icon, label){
+    return `<button class="tab-btn${activeTab===id?' active':''}" data-tab="${id}">${icon}<span>${label}</span></button>`;
+  }
+  function refreshTabbarActive(){
+    document.querySelectorAll('.tab-btn').forEach(b=> b.classList.toggle('active', b.dataset.tab === activeTab));
+  }
+  function renderTab(){
+    refreshTabbarActive();
+    const $view = document.getElementById('view');
+    if(activeTab==='home') $view.innerHTML = renderHome();
+    else if(activeTab==='checkin'){ $view.innerHTML = renderCheckinTab(); bindCheckinTab(); }
+    else if(activeTab==='data'){ $view.innerHTML = renderDataTab(); bindDataTab(); }
+    $view.scrollTop = 0;
+  }
+
+  /* ============== HOME ============== */
+  function renderHome(){
+    const cur = currentWeightVal();
+    const goal = settings.goalWeight;
+    const toGoal = round1(cur - goal);
+    const pct = progressPercent();
+    const totalLost = round1(settings.startWeight - cur);
+    const weekly = weeklyRateStat();
+    const pace = avgWeeklyPace();
+    const due = nextInjectionDue();
+
+    let markerNumber, badge='';
+    if(toGoal <= 0){
+      markerNumber = `${Math.abs(toGoal)} <small>${unitLabel()} past goal</small>`;
+      badge = `<span class="marker-badge">Goal reached</span>`;
+    } else {
+      markerNumber = `${toGoal} <small>${unitLabel()} to go</small>`;
+    }
+
+    const s = sortedWeights();
+    const spark = s.length >= 2 ? sparklineSVG(s.slice(-12)) : '';
+
+    return `
+      <div class="marker-card">
+        <p class="marker-eyebrow">To goal</p>
+        <div class="marker-number">${markerNumber}</div>
+        <p class="marker-sub">${cur} ${unitLabel()} now &middot; goal ${goal} ${unitLabel()}</p>
+        ${badge}
+        <div class="progress-track">
+          <div class="track-line"><div class="track-fill" style="width:${pct}%"></div>
+            <div class="dot" style="left:${pct}%"></div>
+          </div>
+          <div class="track-ends"><span>Start &middot; ${settings.startWeight}</span><span>Goal &middot; ${goal}</span></div>
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-box"><div class="val ${totalLost>=0?'pos':'neg'}">${totalLost>=0?'':'+'}${Math.abs(totalLost)}</div><div class="lbl">${totalLost>=0?'Lost total':'Gained total'}</div></div>
+        <div class="stat-box"><div class="val ${weekly==null?'':(weekly>=0?'pos':'neg')}">${weekly==null?'—':(weekly>=0?'':'+')+Math.abs(weekly)}</div><div class="lbl">This week</div></div>
+        <div class="stat-box"><div class="val ${pace==null?'':(pace>=0?'pos':'neg')}">${pace==null?'—':(pace>=0?'':'+')+Math.abs(pace)}</div><div class="lbl">Avg / week</div></div>
+      </div>
+
+      <div class="card due-card">
+        <div class="txt">
+          <div class="t1">Next shot</div>
+          <div class="t2 ${due && due < todayISO() ? 'overdue':''}">${dueText(due)}</div>
+        </div>
+        <button class="pill-btn" id="homeLogShot">Log shot</button>
+      </div>
+
+      ${s.length>=2 ? `
+      <div class="card">
+        <p class="section-label">Last ${Math.min(s.length,12)} weigh-ins</p>
+        <div class="spark-wrap">${spark}</div>
+      </div>` : `
+      <div class="card empty-state">
+        ${ICONS.list}
+        <p>Log a couple of weigh-ins to see your trend line here.</p>
+      </div>`}
+    `;
+  }
+  function dueText(due){
+    if(!due) return 'Log your first shot';
+    const days = daysBetween(todayISO(), due);
+    if(days === 0) return `Due today (${fmtDateShort(due)})`;
+    if(days < 0) return `Overdue since ${fmtDateShort(due)}`;
+    if(days === 1) return `Due tomorrow`;
+    return `Due in ${days} days &middot; ${fmtDateShort(due)}`;
+  }
+  function sparklineSVG(entries){
+    const w = 400, h = 56, pad = 4;
+    const vals = entries.map(e=>e.weight);
+    const min = Math.min(...vals), max = Math.max(...vals);
+    const range = (max-min) || 1;
+    const stepX = (w - pad*2) / (entries.length-1);
+    const pts = entries.map((e,i)=>{
+      const x = pad + i*stepX;
+      const y = h - pad - ((e.weight-min)/range)*(h-pad*2);
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    });
+    const last = pts[pts.length-1].split(',');
+    return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+      <polyline points="${pts.join(' ')}" fill="none" stroke="#2E6089" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="${last[0]}" cy="${last[1]}" r="4" fill="#1F3A5C"/>
+    </svg>`;
+  }
+  document.addEventListener('click', (e)=>{
+    if(e.target && e.target.id === 'homeLogShot'){ checkinPrefillShot = true; activeTab='checkin'; renderTab(); }
+  });
+
+  /* ============== SHARED CONSTS ============== */
+  const DOSE_CHIPS = [0.25, 0.5, 1, 1.7, 2, 2.4];
+  const SITES = ['Abdomen','Thigh','Upper arm','Other'];
+
+  /* ============== CHECK-IN TAB (weight + optional same-day shot) ============== */
+  function renderCheckinTab(){
+    const ew = editingWeightId ? weightEntries.find(x=>x.id===editingWeightId) : null;
+    const es = editingShotId ? injections.find(x=>x.id===editingShotId) : null;
+    const isEditing = !!(ew || es);
+    const date = (ew && ew.date) || (es && es.date) || todayISO();
+    const shotChecked = !!es || checkinPrefillShot;
+    checkinPrefillShot = false;
+
+    return `
+      <div class="card">
+        <p class="section-label">${isEditing? 'Update check-in':'Log a check-in'}</p>
+        <div class="form-grid">
+          <div class="form-row">
+            <div class="field"><label>Date</label><input type="date" id="cDate" max="${todayISO()}" value="${date}"></div>
+            <div class="field"><label>Weight (${unitLabel()})</label><input type="number" step="0.1" min="0" id="cWeight" value="${ew?ew.weight:''}" placeholder="e.g. 210.4"></div>
+          </div>
+          <div class="field"><label>Note (optional)</label><input type="text" id="cWeightNote" value="${ew&&ew.note?escapeHtml(ew.note):''}" placeholder="How's it going?"></div>
+
+          <div class="toggle-row">
+            <input type="checkbox" id="cShotToggle" ${shotChecked?'checked':''}>
+            <label for="cShotToggle">Also logging a shot on this date</label>
+          </div>
+
+          <div id="shotFields" style="${shotChecked?'':'display:none;'}">
+            <div class="form-row">
+              <div class="field"><label>Dose (mg)</label><input type="number" step="0.05" min="0" id="cDose" value="${es?es.dose:''}" placeholder="e.g. 1.0"></div>
+              <div class="field"><label>Site</label>
+                <select id="cSite">
+                  ${SITES.map(site=>`<option value="${site}" ${es&&es.site===site?'selected':''}>${site}</option>`).join('')}
+                </select>
+              </div>
+            </div>
+            <div class="chip-row" id="doseChips">
+              ${DOSE_CHIPS.map(d=>`<span class="chip" data-dose="${d}">${d} mg</span>`).join('')}
+            </div>
+            <div class="field"><label>Shot note (optional)</label><input type="text" id="cShotNote" value="${es&&es.note?escapeHtml(es.note):''}" placeholder="Side effects, timing, etc."></div>
+          </div>
+
+          <p class="err-msg" id="cErr" style="display:none;"></p>
+          <div class="form-actions">
+            <button class="pill-btn" id="cSaveBtn">${isEditing?'Update check-in':'Save check-in'}</button>
+            ${isEditing?'<button class="pill-btn ghost" id="cCancelBtn">Cancel</button>':''}
+          </div>
+        </div>
+      </div>
+      <p class="hint-text">Leave weight blank to log a shot-only entry — everything ties together by date.</p>
+    `;
+  }
+
+  function bindCheckinTab(){
+    const toggle = document.getElementById('cShotToggle');
+    const shotFields = document.getElementById('shotFields');
+    toggle.addEventListener('change', ()=>{ shotFields.style.display = toggle.checked ? '' : 'none'; });
+
+    document.querySelectorAll('#doseChips .chip').forEach(chip=>{
+      chip.addEventListener('click', ()=>{
+        document.getElementById('cDose').value = chip.dataset.dose;
+        document.querySelectorAll('#doseChips .chip').forEach(c=>c.classList.remove('selected'));
+        chip.classList.add('selected');
+      });
+    });
+
+    document.getElementById('cSaveBtn').addEventListener('click', async ()=>{
+      const date = document.getElementById('cDate').value;
+      const weightRaw = document.getElementById('cWeight').value;
+      const weightNote = document.getElementById('cWeightNote').value.trim();
+      const shotOn = document.getElementById('cShotToggle').checked;
+      const doseRaw = document.getElementById('cDose') ? document.getElementById('cDose').value : '';
+      const site = document.getElementById('cSite') ? document.getElementById('cSite').value : SITES[0];
+      const shotNote = document.getElementById('cShotNote') ? document.getElementById('cShotNote').value.trim() : '';
+      const err = document.getElementById('cErr');
+      err.style.display = 'none';
+
+      if(!date){ err.textContent='Pick a date.'; err.style.display='block'; return; }
+
+      const hasWeight = weightRaw !== '';
+      let weightVal = null;
+      if(hasWeight){
+        weightVal = parseFloat(weightRaw);
+        if(isNaN(weightVal) || weightVal<=0){ err.textContent='Enter a valid weight, or leave it blank.'; err.style.display='block'; return; }
+      } else if(editingWeightId){
+        err.textContent='Weight is required when editing a weigh-in. Delete it from the Data tab instead.';
+        err.style.display='block';
+        return;
+      } else if(!shotOn){
+        err.textContent='Enter a weight or turn on "logging a shot" (or both).';
+        err.style.display='block';
+        return;
+      }
+
+      let doseVal = null;
+      if(shotOn){
+        doseVal = parseFloat(doseRaw);
+        if(isNaN(doseVal) || doseVal<0){ err.textContent='Enter a valid dose for the shot.'; err.style.display='block'; return; }
+      }
+
+      if(hasWeight){
+        let targetId = editingWeightId;
+        if(!targetId){
+          const existing = weightEntries.find(x=>x.date===date);
+          if(existing) targetId = existing.id;
+        }
+        if(targetId){
+          const idx = weightEntries.findIndex(x=>x.id===targetId);
+          weightEntries[idx] = {...weightEntries[idx], date, weight:weightVal, note:weightNote};
+        } else {
+          weightEntries.push({id:uid(), date, weight:weightVal, note:weightNote});
+        }
+        await storSet('weight_entries', weightEntries);
+      }
+
+      if(shotOn){
+        let targetId = editingShotId;
+        if(!targetId){
+          const existing = injections.find(x=>x.date===date);
+          if(existing) targetId = existing.id;
+        }
+        if(targetId){
+          const idx = injections.findIndex(x=>x.id===targetId);
+          injections[idx] = {...injections[idx], date, dose:doseVal, site, note:shotNote};
+        } else {
+          injections.push({id:uid(), date, dose:doseVal, site, note:shotNote});
+        }
+        await storSet('injections', injections);
+      } else if(editingShotId){
+        injections = injections.filter(x=>x.id!==editingShotId);
+        await storSet('injections', injections);
+      }
+
+      editingWeightId = null; editingShotId = null;
+      showToast('Check-in saved');
+      activeTab = 'home';
+      renderTab();
+    });
+
+    const cancelBtn = document.getElementById('cCancelBtn');
+    if(cancelBtn) cancelBtn.addEventListener('click', ()=>{ editingWeightId=null; editingShotId=null; renderTab(); });
+  }
+
+  /* ============== HISTORY HELPERS (shared by Data tab) ============== */
+  function emptyBlock(text){ return `<div class="empty-state">${ICONS.list}<p>${text}</p></div>`; }
+
+  function editFromWeight(id){
+    editingWeightId = id;
+    const w = weightEntries.find(x=>x.id===id);
+    const matchingShot = w ? injections.find(x=>x.date===w.date) : null;
+    editingShotId = matchingShot ? matchingShot.id : null;
+    activeTab = 'checkin';
+    renderTab();
+  }
+  function editFromShot(id){
+    editingShotId = id;
+    const sh = injections.find(x=>x.id===id);
+    const matchingWeight = sh ? weightEntries.find(x=>x.date===sh.date) : null;
+    editingWeightId = matchingWeight ? matchingWeight.id : null;
+    activeTab = 'checkin';
+    renderTab();
+  }
+
+  function bindHistoryRows(){
+    document.querySelectorAll('[data-kind="w"].entry-row').forEach(row=>{
+      row.addEventListener('click', (ev)=>{ if(ev.target.closest('.del-btn')) return; editFromWeight(row.dataset.id); });
+    });
+    document.querySelectorAll('.del-btn[data-kind="w"]').forEach(btn=>{
+      btn.addEventListener('click', async (ev)=>{
+        ev.stopPropagation();
+        if(!confirm('Delete this weigh-in?')) return;
+        const id = btn.dataset.del;
+        weightEntries = weightEntries.filter(x=>x.id!==id);
+        if(editingWeightId===id) editingWeightId=null;
+        await storSet('weight_entries', weightEntries);
+        renderTab();
+      });
+    });
+    document.querySelectorAll('[data-kind="s"].entry-row').forEach(row=>{
+      row.addEventListener('click', (ev)=>{ if(ev.target.closest('.del-btn')) return; editFromShot(row.dataset.id); });
+    });
+    document.querySelectorAll('.del-btn[data-kind="s"]').forEach(btn=>{
+      btn.addEventListener('click', async (ev)=>{
+        ev.stopPropagation();
+        if(!confirm('Delete this injection?')) return;
+        const id = btn.dataset.del;
+        injections = injections.filter(x=>x.id!==id);
+        if(editingShotId===id) editingShotId=null;
+        await storSet('injections', injections);
+        renderTab();
+      });
+    });
+  }
+
+  /* ============== DATA TAB (charts + full history) ============== */
+  function renderDataTab(){
+    const s = sortedWeights();
+    const w = [...s].reverse();
+    const sh = [...sortedShots()].reverse();
+
+    const chartsBlock = s.length >= 2 ? `
+      <div class="range-toggle">
+        <button data-range="30" class="${trendsRange===30?'active':''}">30d</button>
+        <button data-range="90" class="${trendsRange===90?'active':''}">90d</button>
+        <button data-range="all" class="${trendsRange==='all'?'active':''}">All</button>
+      </div>
+      <div class="card">
+        <p class="section-label">Weight over time</p>
+        <div style="height:220px;"><canvas id="weightChart"></canvas></div>
+        <div class="chart-legend">
+          <span class="legend-item"><span class="legend-swatch" style="background:#2E6089"></span>Actual</span>
+          <span class="legend-item"><span class="legend-swatch" style="background:#C08A2E"></span>7-day trend</span>
+          <span class="legend-item"><span class="legend-swatch" style="background:#B24444"></span>Goal</span>
+        </div>
+      </div>
+      <div class="card">
+        <p class="section-label">Weekly pace (${unitLabel()} per week)</p>
+        <div style="height:150px;"><canvas id="paceChart"></canvas></div>
+      </div>
+    ` : `
+      <div class="card empty-state">${ICONS.list}<p>Log at least two weigh-ins from Check-in to unlock your charts.</p></div>
+    `;
+
+    return `
+      ${chartsBlock}
+      <div class="card">
+        <p class="section-label">Weigh-ins</p>
+        ${w.length===0? emptyBlock('Nothing logged yet. Add one from Check-in.') : w.map((e,i)=>weightRow(e, w[i+1])).join('')}
+      </div>
+      <div class="card">
+        <p class="section-label">Shots</p>
+        ${sh.length===0? emptyBlock('No injections logged yet. Add one from Check-in.') : sh.map(e=>shotRow(e)).join('')}
+      </div>
+    `;
+  }
+  function rangeStartDate(){
+    if(trendsRange==='all'){
+      const all = [...weightEntries.map(e=>e.date), ...injections.map(e=>e.date)];
+      return all.length ? all.sort()[0] : todayISO();
+    }
+    const d = new Date();
+    d.setDate(d.getDate() - trendsRange);
+    return d.toISOString().slice(0,10);
+  }
+  function bindDataTab(){
+    bindHistoryRows();
+
+    const s = sortedWeights();
+    if(s.length < 2) return;
+
+    document.querySelectorAll('.range-toggle button').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const r = btn.dataset.range;
+        trendsRange = r==='all' ? 'all' : parseInt(r,10);
+        renderTab();
+      });
+    });
+
+    const rStart = rangeStartDate();
+    const rEnd = todayISO();
+    const allWeights = sortedWeights();
+    const trendAll = rollingTrend(allWeights, 7);
+    const inRange = allWeights.filter(e=> e.date >= rStart && e.date <= rEnd);
+    const labels = inRange.map(e=> fmtDateShort(e.date));
+    const actualData = inRange.map(e=> e.weight);
+    const trendData = inRange.map(e=>{
+      const idx = allWeights.findIndex(x=>x.date===e.date);
+      return trendAll[idx];
+    });
+    const goalData = inRange.map(()=> settings.goalWeight);
+
+    if(chartRef) chartRef.destroy();
+    const ctx = document.getElementById('weightChart');
+    if(ctx && window.Chart){
+      chartRef = new Chart(ctx, {
+        type:'line',
+        data:{
+          labels,
+          datasets:[
+            {label:'Actual', data:actualData, borderColor:'#2E6089', backgroundColor:'rgba(159,198,224,0.22)', fill:true, tension:0.25, pointRadius:2.5, borderWidth:2.2},
+            {label:'7-day trend', data:trendData, borderColor:'#C08A2E', borderDash:[5,4], pointRadius:0, borderWidth:2, tension:0.3},
+            {label:'Goal', data:goalData, borderColor:'#B24444', borderDash:[2,3], pointRadius:0, borderWidth:1.6}
+          ]
+        },
+        options:{
+          responsive:true, maintainAspectRatio:false,
+          plugins:{ legend:{display:false} },
+          scales:{
+            x:{ ticks:{ maxTicksLimit:6, font:{family:"'IBM Plex Mono', monospace", size:10}, color:'#5B6675' }, grid:{ display:false } },
+            y:{ ticks:{ font:{family:"'IBM Plex Mono', monospace", size:10}, color:'#5B6675' }, grid:{ color:'#E4E8EE' } }
+          }
+        }
+      });
+    }
+
+    const weeks = weeklyBuckets().filter(w=> w.week >= rStart);
+    const paceLabels = weeks.slice(1).map(w=> fmtDateShort(w.week));
+    const paceData = weeks.slice(1).map((w,i)=> round1(weeks[i].weight - w.weight));
+    if(barChartRef) barChartRef.destroy();
+    const ctx2 = document.getElementById('paceChart');
+    if(ctx2 && window.Chart){
+      barChartRef = new Chart(ctx2, {
+        type:'bar',
+        data:{ labels:paceLabels, datasets:[{ data:paceData, backgroundColor: paceData.map(v=> v>=0 ? '#9FC6E0' : '#E3B3AF'), borderRadius:4 }]},
+        options:{
+          responsive:true, maintainAspectRatio:false,
+          plugins:{ legend:{display:false} },
+          scales:{
+            x:{ ticks:{ font:{family:"'IBM Plex Mono', monospace", size:9}, color:'#5B6675' }, grid:{ display:false } },
+            y:{ ticks:{ font:{family:"'IBM Plex Mono', monospace", size:9}, color:'#5B6675' }, grid:{ color:'#E4E8EE' } }
+          }
+        }
+      });
+    }
+  }
+  function rollingTrend(entriesAsc, windowDays){
+    return entriesAsc.map((e)=>{
+      const win = entriesAsc.filter(x=> x.date <= e.date && daysBetween(x.date, e.date) < windowDays);
+      const avg = win.reduce((s,x)=>s+x.weight,0) / win.length;
+      return round1(avg);
+    });
+  }
+
+  function weightRow(e, prev){
+    const delta = prev ? round1(prev.weight - e.weight) : null;
+    return `
+      <div class="entry-row" data-id="${e.id}" data-kind="w">
+        <div class="entry-left">
+          <span class="entry-date">${fmtDateFull(e.date)}</span>
+          <span class="entry-main">${ICONS.scale}${e.weight} ${unitLabel()}</span>
+          ${e.note?`<span class="entry-tag">${escapeHtml(e.note)}</span>`:''}
+        </div>
+        <div class="entry-right">
+          ${delta!==null? `<span class="entry-delta ${delta>=0?'pos':'neg'}">${delta>=0?'-':'+'}${Math.abs(delta)}</span>`:''}
+          <button class="del-btn" data-del="${e.id}" data-kind="w" aria-label="Delete">×</button>
+        </div>
+      </div>`;
+  }
+  function shotRow(e){
+    return `
+      <div class="entry-row" data-id="${e.id}" data-kind="s">
+        <div class="entry-left">
+          <span class="entry-date">${fmtDateFull(e.date)}</span>
+          <span class="entry-main">${ICONS.syringe}${e.dose} mg</span>
+          <span class="entry-tag">${e.site}${e.note?' · '+escapeHtml(e.note):''}</span>
+        </div>
+        <div class="entry-right">
+          <button class="del-btn" data-del="${e.id}" data-kind="s" aria-label="Delete">×</button>
+        </div>
+      </div>`;
+  }
+  /* ============== SETTINGS MODAL ============== */
+  function openSettingsModal(){
+    $modalRoot.innerHTML = `
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-sheet">
+          <h2>Settings</h2>
+          <p class="modal-sub">Adjust your starting point, goal, and injection schedule.</p>
+          <div class="form-grid">
+            <div class="field"><label>Units</label>
+              <div class="unit-toggle">
+                <button type="button" data-unit="lbs" class="${settings.units==='lbs'?'active':''}">lbs</button>
+                <button type="button" data-unit="kg" class="${settings.units==='kg'?'active':''}">kg</button>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label>Starting weight</label><input type="number" step="0.1" id="mStart" value="${settings.startWeight}"></div>
+              <div class="field"><label>Starting date</label><input type="date" id="mStartDate" max="${todayISO()}" value="${settings.startDate}"></div>
+            </div>
+            <div class="field"><label>Goal weight</label><input type="number" step="0.1" id="mGoal" value="${settings.goalWeight}"></div>
+            <div class="field"><label>Injection interval (days)</label><input type="number" step="1" min="1" id="mInterval" value="${settings.intervalDays}"></div>
+            <p class="err-msg" id="mErr" style="display:none;"></p>
+            <div class="form-actions">
+              <button class="pill-btn" id="mSave">Save changes</button>
+              <button class="pill-btn ghost" id="mClose">Close</button>
+            </div>
+          </div>
+
+          <hr style="border:none;border-top:1px solid var(--line);margin:18px 0;">
+          <p class="section-label">Security</p>
+          <p style="font-size:.8rem;color:var(--ink-soft);margin:0 0 10px;">Current PIN: ${lsGet('pin') ? 'custom' : '1217 (default)'}</p>
+          <div class="form-actions" style="margin-bottom:8px;">
+            <button class="pill-btn ghost" id="mChangePw">Change PIN</button>
+            <button class="pill-btn ghost" id="mLockNow">Lock now</button>
+          </div>
+          <div id="pwFields" style="display:none;" class="form-grid">
+            <div class="form-row">
+              <div class="field"><label>New PIN</label><input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="4" id="mNewPw" autocomplete="off"></div>
+              <div class="field"><label>Confirm</label><input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="4" id="mNewPw2" autocomplete="off"></div>
+            </div>
+            <p class="err-msg" id="mPwErr" style="display:none;"></p>
+            <button class="pill-btn" id="mSavePw">Update PIN</button>
+          </div>
+
+          <hr style="border:none;border-top:1px solid var(--line);margin:18px 0;">
+          <button class="pill-btn danger ghost" id="mReset" style="width:100%;">Reset all data</button>
+        </div>
+      </div>
+    `;
+    let pendingUnit = settings.units;
+    document.querySelectorAll('[data-unit]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        pendingUnit = btn.dataset.unit;
+        document.querySelectorAll('[data-unit]').forEach(b=>b.classList.toggle('active', b===btn));
+      });
+    });
+    document.getElementById('modalOverlay').addEventListener('click', (e)=>{ if(e.target.id==='modalOverlay') closeModal(); });
+    document.getElementById('mClose').addEventListener('click', closeModal);
+
+    document.getElementById('mSave').addEventListener('click', async ()=>{
+      const startWeight = parseFloat(document.getElementById('mStart').value);
+      const startDate = document.getElementById('mStartDate').value;
+      const goalWeight = parseFloat(document.getElementById('mGoal').value);
+      const intervalDays = parseInt(document.getElementById('mInterval').value,10);
+      const err = document.getElementById('mErr');
+      if(isNaN(startWeight)||isNaN(goalWeight)||!startDate||isNaN(intervalDays)||intervalDays<1){
+        err.textContent = 'Please fill in every field with valid values.';
+        err.style.display='block';
+        return;
+      }
+      let factor = 1;
+      if(pendingUnit !== settings.units){ factor = pendingUnit==='kg' ? (1/2.20462) : 2.20462; }
+      settings = { units: pendingUnit, startWeight: round1(startWeight*factor), startDate, goalWeight: round1(goalWeight*factor), intervalDays };
+      if(factor !== 1){
+        weightEntries = weightEntries.map(e=> ({...e, weight: round1(e.weight*factor)}));
+        await storSet('weight_entries', weightEntries);
+      }
+      await storSet('settings', settings);
+      showToast('Settings saved');
+      closeModal();
+      renderTab();
+    });
+
+    document.getElementById('mChangePw').addEventListener('click', ()=>{
+      const el = document.getElementById('pwFields');
+      el.style.display = el.style.display==='none' ? '' : 'none';
+    });
+    document.getElementById('mSavePw').addEventListener('click', ()=>{
+      const p1 = document.getElementById('mNewPw').value;
+      const p2 = document.getElementById('mNewPw2').value;
+      const err = document.getElementById('mPwErr');
+      if(!/^\d{4}$/.test(p1)){ err.textContent='PIN must be exactly 4 digits.'; err.style.display='block'; return; }
+      if(p1 !== p2){ err.textContent='PINs don\'t match.'; err.style.display='block'; return; }
+      err.style.display='none';
+      storSet('pin', p1);
+      showToast('PIN updated');
+      closeModal();
+    });
+
+    document.getElementById('mLockNow').addEventListener('click', ()=>{
+      closeModal();
+      renderLockScreen();
+    });
+
+    document.getElementById('mReset').addEventListener('click', async ()=>{
+      if(!confirm('This clears all weight, injection, and settings data on this device — including any custom PIN. Continue?')) return;
+      weightEntries = []; injections = []; settings = null;
+      lsRemove('weight_entries'); lsRemove('injections'); lsRemove('settings'); lsRemove('pin');
+      closeModal();
+      init();
+    });
+  }
+  function closeModal(){ $modalRoot.innerHTML=''; }
+
+  /* ============== LOCK SCREEN (4-digit PIN, default 1217) ============== */
+  function renderLockScreen(){
+    $root.innerHTML = `
+      ${warningBanner()}
+      <div id="lockScreen">
+        <div class="lock-icon-wrap">${ICONS.lock}</div>
+        <h1>Progress Log</h1>
+        <p class="lead">Enter your 4-digit PIN to continue.</p>
+        <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="4" id="lockInput" autocomplete="off" placeholder="••••" autofocus>
+        <p class="err-msg" id="lockErr" style="display:none;"></p>
+        <button class="pill-btn" id="lockSubmit">Unlock</button>
+        <button class="reset-link" id="lockReset">Reset app data</button>
+      </div>
+    `;
+    const input = document.getElementById('lockInput');
+    input.addEventListener('input', ()=>{ input.value = input.value.replace(/\D/g,'').slice(0,4); if(input.value.length===4) submit(); });
+    const submit = ()=>{
+      const val = input.value;
+      const err = document.getElementById('lockErr');
+      if(val === getPin()){
+        err.style.display='none';
+        if(!settings){ renderOnboarding(); } else { renderShell(); }
+      } else {
+        err.textContent = 'Incorrect PIN.';
+        err.style.display = 'block';
+        input.value = '';
+        input.focus();
+      }
+    };
+    document.getElementById('lockSubmit').addEventListener('click', submit);
+    input.addEventListener('keydown', (e)=>{ if(e.key==='Enter') submit(); });
+    document.getElementById('lockReset').addEventListener('click', ()=>{
+      if(!confirm('This permanently deletes all weigh-ins, injections, settings, and any custom PIN on this device. This cannot be undone. Continue?')) return;
+      weightEntries = []; injections = []; settings = null;
+      lsRemove('weight_entries'); lsRemove('injections'); lsRemove('settings'); lsRemove('pin');
+      init();
+    });
+  }
+
+  /* ============== ONBOARDING (first run: goals) ============== */
+  function renderOnboarding(){
+    $root.innerHTML = `
+      ${warningBanner()}
+      <div id="onboard">
+        <h1>Progress Log</h1>
+        <p class="lead">Set your starting weight and the goal you're working toward. You can change any of this later in Settings.</p>
+        <div class="form-grid">
+          <div class="field"><label>Units</label>
+            <div class="unit-toggle">
+              <button type="button" data-unit="lbs" class="active">lbs</button>
+              <button type="button" data-unit="kg">kg</button>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Starting weight</label><input type="number" step="0.1" id="oStart" placeholder="e.g. 232"></div>
+            <div class="field"><label>Starting date</label><input type="date" id="oStartDate" max="${todayISO()}" value="${todayISO()}"></div>
+          </div>
+          <div class="field"><label>Goal weight</label><input type="number" step="0.1" id="oGoal" placeholder="e.g. 195"></div>
+          <div class="field"><label>Injection interval (days)</label><input type="number" step="1" min="1" id="oInterval" value="7"></div>
+          <p class="err-msg" id="oErr" style="display:none;"></p>
+          <button class="pill-btn" id="oSave" style="margin-top:6px;">Continue</button>
+        </div>
+      </div>
+    `;
+    let unit = 'lbs';
+    document.querySelectorAll('[data-unit]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        unit = btn.dataset.unit;
+        document.querySelectorAll('[data-unit]').forEach(b=>b.classList.toggle('active', b===btn));
+      });
+    });
+    document.getElementById('oSave').addEventListener('click', async ()=>{
+      const startWeight = parseFloat(document.getElementById('oStart').value);
+      const startDate = document.getElementById('oStartDate').value;
+      const goalWeight = parseFloat(document.getElementById('oGoal').value);
+      const intervalDays = parseInt(document.getElementById('oInterval').value,10);
+      const err = document.getElementById('oErr');
+      if(isNaN(startWeight)||startWeight<=0||isNaN(goalWeight)||goalWeight<=0||!startDate||isNaN(intervalDays)||intervalDays<1){
+        err.textContent = 'Please fill in every field with valid values.';
+        err.style.display='block';
+        return;
+      }
+      err.style.display='none';
+      settings = { units: unit, startWeight: round1(startWeight), startDate, goalWeight: round1(goalWeight), intervalDays };
+      await storSet('settings', settings);
+      renderShell();
+    });
+  }
+
+  /* ============== INIT ============== */
+  async function init(){
+    $root.innerHTML = `<div class="loading-wrap">${ICONS.spinner}<p>Loading your data…</p></div>`;
+    storageOK = testStorage();
+    const [s, w, i] = await Promise.all([
+      storGet('settings'), storGet('weight_entries'), storGet('injections')
+    ]);
+    settings = s;
+    weightEntries = w || [];
+    injections = i || [];
+
+    renderLockScreen();
+  }
+
+  init();
+})();
+</script>

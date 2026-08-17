@@ -1,0 +1,1231 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Progress Log">
+<meta name="theme-color" content="#1F3A5C">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlByb2dyZXNzIExvZyIsICJzaG9ydF9uYW1lIjogIlByb2dyZXNzIiwgInN0YXJ0X3VybCI6ICIuIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNGOEY5RkIiLCAidGhlbWVfY29sb3IiOiAiIzFGM0E1QyIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQWdBQUFBSUFDQUlBQUFCN0drT3RBQUFPM2tsRVFWUjQydTNkeTIwZFJ4QUZVRkZnSGx4cXB3QzRVd1lLZ0FDaHlBaGxvQXlVQTNmTXhnc0RzaXpRcFBrNDAxMVY5NXkxSWZQMWROM2JQVStmcTV2YnV3OEE1UGxvQ1FBVUFBQUtBQUFGQUlBQ0FFQUJBS0FBQUZBQUFDZ0FBQlFBQUFvQUFBVUFnQUlBUUFFQW9BQUFVQUFBS0FBQUZBQUFDZ0FBQlFDQUFnQkFBUUNnQUFCUUFBQUtBQUFGQUlBQ0FFQUJBS0FBQUZBQUFDZ0FBQlFBQUFvQUFBVUFnQUlBUUFFQW9BQUFVQUFBS0FBQUZBQUFDZ0FBQlFDQUFnQkFBUUNnQUFCUUFBQW9BQUFGQUlBQ0FFQUJBS0FBQUZBQUFDZ0FBQlFBQUFvQUFBVUFnQUlBUUFFQW9BQUFVQUFBS0FBQUZBQUFDZ0FBQlFDQUFnQkFBUUNnQUFCUUFBQW9BQUFVQUFBS0FFQUJBS0FBQUZBQUFDZ0FBQlFBQUFvQUFBVUFnQUlBUUFFQW9BQUFVQUFBS0FBQTlyaTJCSXowOVBQaDJGL3cwNWR2VnBWaHJtNXU3NndDVWw0M29BQkExbXNGRkFCSWZIMkFBZ0NKcnc5UUFDRDBsUUVLQU9TK0prQUJnTkJYQmlnQWtQdWFBQVdBM0VjVG9BQ1ErMmdDRkFDaUh6V0FBa0R1b3dsUUFJaCsxQUFLQUxtUEprQUJJUHBSQXlnQVJEOXFBQVdBNkVjTm9BQVEvYWdCRkFDaUh6V0FBa0Qwb3daUUFJaCsxQUFLQU5HUEd1QjNIeTJCOU1jZXdBMEFZNCtyQUFvQTBZOGFZRHF2Z0tRLzJDRnVBQmhzY0JWUUFFaC9FV1lCZFlBQ1FQVExLY3VMQWtENnl5TnJqZ0pBOUVzZkR3SUZnTkNSTlo0TENnQXBJMXc4SmhRQU1rV2dlR29vQU9TSStQQVFVUURFQjRmVThEUlJBR1NGaGFUd2NGRUFaQVdFYVBDZ1VRREVoWUpFOE1SUkFNUmxnU0R3NkZFQVpNMi80YmNUN0FRRlFOek1HM2hid3BaUUFNU051am0zTit3TkJVRGNoQnR2bThRbVVRREVEYmFwdGx2c2xqSDhtOERtMlR5UFV1b1orWWRJM1FDWU1EK2kzK2F4ZVJRQWNRTnNldTBpdTJncXI0RE1yYm1kck1nVDlDN0lEWUJPMHlMNmJTcWJTZ0VRTjZpbTFPNnl1MEo0QldRK3pXZVE3Yy9YdXlBM0FDck9odWkzMld3Mk53QU1KSzRDN2dFS0FPbVBEdEFCYzNrRkZKMytvaDg3MEEwQXM0ZXJnSHVBQWtENm93TjBRQWF2Z09MU1gvUmpXK0lHWU15Z3lnNXhEMUFBU0gvc0V4U0E0NytwSnF3RFhBTFc4eDNBL0YwdStyRmRjUU13VGxCOS83Z0hLQURwTC8zUkFTZ0FwRC8yRWdyQThkL0VFdElCTGdFS1FQcExmM1FBQ2tENlMzOTBBQW9BNlk4OWhnSncvRGVaRE84QWx3QUZJUDJsUHpvQUJTRDlwVDg2QUFXQTlNZmVRd0hrSHY5TklDRWQ0Qkp3Qm44Wm5QVDNSS3l3UFIvcTJoSTRlVW1pTi8xcVZ2N1pOWEZDVndDNHFNNWY4RC8rai9wZzhlSmI4QU41QmVRaWJKMDlGL3ZmRFlBKzEyM2hVditIREh4TVhnUzVBVGorU1ArNDNQZklESUlDa1A0MnZlajM3SXhESjE0QklmZVhmaTZ4aFJ1QXpITGVTWWwrVDlNeWx1VlBBc3VMRW1HUjl1WGgrSThzbXQwQUhQL05rbE8vNTJ2MTNBRHNiK0pQL1piQ0RDb0EwZzg0OGk1bldSelBpL01LeVBYV1lVMXVtaFEzQUtTQTlMZFdkcklDUUp3ZHUxYVd5NktaUndWQTNLSEpaRm85bDRDeWZBZFFjU3huVEl2b3R5VU1qaHNBT2hMcmlRSXdpaG1uR0dsbFZiZnNiUnZ2cmZ4bGNKakFac3ZyUlFkdUFJNy8wdDhtZEFtd0NSWEFGTklmSFlBQ01IVldCbXR1WlU3bk93REhvb2hodTJCNTYzKzB2bDhKK05lRGkvRG5BS3JFUWNjeExqdkRKeTFtMnVjMVVBcUFGZnZWQUxkYncvQ1BiNllVZ1BRM3VsTFBhcGlzeG53SFFMKzhxemJZdjM2ZXZTdno5UE5CNVBFbWZoZVFVMXVuOVAvMDVWdmxGZHYrNDdYN1psVmo3ZVVWa0Z0cWczenhXNlJzS2dYakJ1RDRIeGRueFkvOE5YLzRYdmNBR2EwQXBKNTFHQlg5MnorSWZXc2RGSUNEajhUMG9jd0NDb0FteDZqWldiRHkwem44OGlwZkF1OFpvVVl4dHl4SG9vNkJWdFc0dVFFZ3AwSkhkTm5uZFE5QUFaaWN1aXNRKzNKODJRZTNrNjJBQWtnOC9Wa0tLMkFwVUFCVVBEUVorR1hyNEFqTXMzd0p2SHBnV3FTZXY2clhzaHM5TndERWtEbWNjeFZ3RDBBQkRML3NXd0hyWXdWUUFBNUs1VDY3MmQ2K1N2WTJDZ0RwcndOQUFiamIrdXhXekdkWEFJU2ZqL3p1aTV3Y3RNbFJBRWgvSFlBQ3dLM1dwN2FHUHJVQ3dQSGZESWVrb1VzQUNrQVVPc0ZaVDdXbkFOQjVlUG9vQUhCY3Rhb29BS2NoSDFsT1RlNEEyMTRCNE9EbXcxcGhIMVlCNEJ5RW5ZQUNBT2MxNjR3Q2NBaWFOcXVIZjE2cDFMb0R5bDRDL0daUUJRQ0FBc0R4bjdCTEFBcUFvQ1RDeXFNQXpDZGdqaFRBeWFJdXY4ZCtXTU01S1J3TmdnSUFJTUsxSlhEWGlUcitmLy82K1BKL2NQL2pjN3RMd0lHUDllbm5nMXVkQWlBeEhLZDZOZlQvNno5dVZ3YURwOGtiR3dXQWhqc3I5MS8rRllvM2dYemtNcjREQ1BvdUtPZVRmdi82K1A3MFAvVVh0RTk4VWpjQUtIZnFmL1VYOTE0SU53Q2kxWHovcythUVh2TXE0RHNuM0FCTW80UC91ditkcThEaW1mTEd4ZzJBQ3gwNFBOWHFiZGVSdk5wVjRNRG5JbW9WQURqN04rc0FVQUJJZngwQUNzQlY5MmgxM3YvVVNkNDZQNGt2bnlTQUFtRCtMcTkyN3A1M0QzQTJVZ0E0aFVuLzNBNHdXUW9BNUt3T1FBSGdDT1lJNWhtaEFNQVIyeVVBQlVCMVk3N042NUt0WXpyQTk4QUtBQUFGUUxhOUw1ZDdIYXYzL3JTK0JrQUJ1T0VDY2tBQk9IdzExL0d0dW0rRHpaY0NBRUFCQUtBQVdHYkErODIrNzFJR3ZBWHlQWmtDQU85ZVBTOFVBQUFLQUFBRkFHZnAvaHJkYndaRkFRQ2dBQUJRQUFBb0FBQVVBQUFLQUFBRkFJQUNBRUFCQUtBQUFGQUFESEwvNDdPZkh4UUFBQW9BQUFYQUd2NWxLTThMQlVBekEvNWxxTDZ2MFFkOEFlQmZGbE1BQUNnQUFCUUF6L0x1OVF3ZDM2WDREYURtU3dHVTV2MG1rSndEYmdEME9IejFPbER2L1drZGsxRUFBQ2dBTjl3UnVsd0N4cno5OTQ1VUFZQnNUVXgvRkFEOGk1ZkxuaEVLQUJ5eEhmOVJBRGlDeVZucGI3SVVBR1hOK3phdld0ck9TMy9mQUNzQXlVamRVMWlkekszemt6Z2pTd0FGUUlvS3lldk5Ed29BRXZOWCtxTUF5THJxVm52UHNDdUZxNlgvZ2MvRnE5RVExNWJncEZFMFF1dXorUHZYUndmL3dUTmxFZHdBTUkyYmM3bG0rc3RIM0FCd0ZUanhLdURnanh2QU5EbnZhbkkrNmYyUHo4ZUc5ZUcvb0gzaWs3b0IwRmo5N3psK1JmYkZGNEl1b2UvOUR3cEFQdko2anI5YUJ0N3phRGdGd05nNzc0R3oxTEhrNXVYN3NlSG8xQkxGZHdBQUNpRDdYT3pEdXBzNy9oc0VCWUJ3QkhPa0FNQjhXbmtVQUM2L2ttaDIrbnNsb2dBQVVBQU94YU9QeGk0Qmp2OHRqdjhuN1N2WEhRVkFTdHRaWjFBQU9BUmhKNkFBbk5kOFdDdnN3eW9BUzVCOERqcmpJeHZhWG9GbzJ5c0EwQUZXRlFXQTB4Q2VQZ3JBUERpNytjaldjOWhIMW5rS0FMVW5Da1VoQ3NBSnpxZTJoajYxQXNBbHdDVG41S0RqUHdyQVlPZ0E2VytUS3dEY2FuMTJLK2F6S3dEY2ZrejE0QVIwQ2tZQm1CQWRJUDN0YlFXQXU2MFZzRDVXUUFIQWdvT1NDZCsxTW83QS9PSHE1dmJPS2l5ZXhoWnp1Q0NtNVpIVk5uUnVBQ1RlQTF3RnBEOEt3TUJiQ2l1QXBWQUFlVWRnSy9EMzJNZitiUWRyUHJpZGJBVVVBS1VuSjYwRGxuMWUyY2NMZkFtOGJWQWJUZWJLZEI0ZldCYlRvTGtCNEI2UWVCV1EvaWdBNWlmZE8xZG0zdUxFZnRWaEZoU0F3NjkxeUUzTUxSL0V2clVPQ3NEQnAvMHN0YTZCWFQ5OHI5UnovTi9JbDhDYjkyaTdFOHJlY2ZXSHFPMG94MzgzQU5VU21pL0ZMd1RiZnp6cHo1dGNXd0l1U0ptOWMvdnIvMTRrNzRxa21BTXZiK1VWVUlraDd6aTYxYzV1aTljdy9PT2JLUVdnQUF4dzBmdjdTWXVaOW5rTmxBTEFnYVZsSnI1L2VRZC9OTk9FQW5CbWlhdUJZV3dZQmZCT2ZoZVFYV1ZsckxtVlVRQTRSNXM2cTIyZkt3QjJEWjRPUVByYmhNdjRjd0FjUDM2T2VOSU5Od0JER0hwQmxsTlcxZkZmQVNDdHNKN1U1YmVCT3N2MFhpalJieWZvU0RjQUJTTy9wTC85akFJd21mWFd5bkpaTlBPb0FNZzlOQm5SMkxWeS9DL0xkd0RWZC9hODNCUUhIcmRGY3dNZ05DNjkzTWhaRm1XdkFKelhVQU9Xd2d4VzVCV1FTNjV6b3ZBeUYyNEFpRWhIWUIvWmpuVURvT1oyVDBqSjhjSGhJVnJKT3Z4bGNCVE5SNzhMRnR3QW5IcWljOFJmamVlUldWVUZZT3VuYi8xMlRlQXhXZHY2dkFKcU9XT0JBL0Q3Unk1YkJ1SEI1SXRmTndEcHZHZ0dISUtLaEk0SFllZTdBZkRQN25RTzJwaS9mdTk1MU9OR0FlUWV1QXpEL3d5SWkxdkJDbmU1aDNFWnI0QmNoOEZ1RCtWUEF2ZmVxVTVlU0g4VWdBa0VldzhGRUhZSk1JZU1UMy9IZndXZ0EzUUEwaDhGb0FOMEFOSWZCWUFPd0I1REFiZ0VtRTlHN1M3SGZ3V2dBM1FBMGg4Rm9BTjBBTklmQllBT3dGNUNBYmdFbUZ0RzdTTEhmd1dnQTNRQTBwOXorY3ZnVWk3VTVncTdGRGVBeEh1QXF3RFNId1ZncXNFK1FRSGtYUUxNTm1WM2lPUC9GcjREQ0QxcW1UZnNSdHdBRXU4QnJnSklmeFNBRGdEcG44c3JvUFFKTklRMm5vM25Cc0NIMkVsd0ZaRCswbDhCb0FPUS90SS9pRmRBeHRKazJtUDJtQnNBOGZjQVZ3SHBMLzNkQUVpZlVvTnFVOWxVQ29EMGs3aUp0WmZzcGNHOEFpcXF5TFI0SXlUOXBiOGJBT241YTRCdEhwdEhBUkI5QmpmSjlvdzlNNGxYUU5XVm1oOXZoS1MvOUhjRElEMTVEYlpOWXBNb0FLSlAzeWJjM3JBM0ZBQzVjMjdVYlFsYlFnRVFQZkJtM2s2d0V4UUE2Y052L2oxNkZBRFJRU0FMUEhFVUFOR0pJQlE4YUJRQTBkRWdJRHhjRkFDU1FsaDRtaWdBc2xORGNIaUlLQUNpNDBPT2VHb29BQVJLWXFaNFRDZ0FoRXRReW5ndUtBQmtUVkRvZUJBb0FLUlBTZ3haY3hRQThpZ2luaXd2Q2dBMU1EeTVMQ0FLQUIyQTlFY0JvQVlRL1RUbjN3UTIyMkNIdUFIZ0tvRG9Sd0dnQmhEOWpPY1ZrTW5ISHNBTkFGY0JSRDhLQURXQTZFY0JvQVlRL1NnQTFBQ2lId1dBR2tEMG93QlFBNGgrRkFCcUFOR1BBa0FOSVBwUkFHZ0M1RDRLQURXQTZFY0JvQW1RK3lnQTFBQ2lId1dBSmtEdW93RFFCTWg5RkFDYVFPNkRBa0FaQ0gxUUFHZ0N1UThLQUdVZzlFRUJvQThrUGlnQTlJSEVCd1dBVnBEMW9BRFFEVkllRkFCQXNvK1dBRUFCQUtBQUFGQUFBQ2dBQUJRQUFBb0FBQVVBZ0FJQVFBRUFvQUFBVUFBQUtBQUFGQUFBQ2dBQUJRQ0FBZ0JBQVFDZ0FBQlFBQUFvQUFBVUFBQUtBQUFGQUtBQUFGQUFBQ2dBQUJRQUFBb0FBQVVBZ0FJQVFBRUFvQUFBVUFBQUtBQUFGQUFBQ2dBQUJRQ0FBZ0JBQVFDZ0FBQlFBQUFvQUFBVUFBQUtBQUFGQUlBQ0FGQUFBQ2dBQUJRQUFBb0FBQVVBZ0FJQVFBRUFvQUFBVUFBQUtBQUFGQUFBQ2dBQUJRQ0FBZ0JBQVFDZ0FBQlFBQUFvQUFBVUFBQUtBQUFGQUlBQ0FFQUJBS0FBQUJRQUFBb0FBQVVBZ0FJQVFBRUFvQUFBVUFBQUtBQUFGQUFBQ2dBQUJRREFkbjhCYzVzVGF2VVNKaklBQUFBQVNVVk9SSzVDWUlJPSIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIn1dfQ==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+
+<style>
+  :root{
+    --ink:#1C2430;
+    --ink-soft:#5B6675;
+    --bg-outer:#DCE1E8;
+    --paper:#F8F9FB;
+    --paper-2:#EEF1F5;
+    --line:#D6DBE3;
+    --primary-deep:#1F3A5C;
+    --primary:#2E6089;
+    --primary-light:#9FC6E0;
+    --primary-pale:#E4EEF6;
+    --accent:#C08A2E;
+    --accent-pale:#F3E6C9;
+    --alert:#B24444;
+    --alert-pale:#F1DAD8;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none!important;transition:none!important;}
+  }
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg-outer);
+    font-family:'Archivo',sans-serif;
+    color:var(--ink);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+  }
+  #app-shell{
+    width:100%;
+    max-width:460px;
+    min-height:100vh;
+    background:var(--paper);
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    box-shadow:0 0 40px rgba(28,36,48,0.15);
+  }
+  h1,h2,h3{font-family:'Fraunces',serif;margin:0;}
+  button{font-family:inherit;}
+  input,select{font-family:inherit;}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+  /* ---------- Topbar ---------- */
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 18px 14px;
+    background:var(--primary-deep);
+    color:var(--paper);
+    position:sticky;top:0;z-index:20;
+  }
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand svg{width:22px;height:22px;color:var(--primary-light);flex-shrink:0;}
+  .brand h1{font-size:1.15rem;font-weight:600;letter-spacing:.2px;color:var(--paper);}
+  .brand p{margin:1px 0 0;font-size:.72rem;color:var(--primary-light);text-transform:uppercase;letter-spacing:1px;font-family:'IBM Plex Mono',monospace;}
+  .icon-btn{
+    background:rgba(248,249,251,0.08);
+    border:1px solid rgba(248,249,251,0.25);
+    color:var(--paper);
+    width:38px;height:38px;border-radius:10px;
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+  }
+  .icon-btn svg{width:18px;height:18px;}
+  .icon-btn:hover{background:rgba(248,249,251,0.16);}
+
+  /* ---------- View / scroll area ---------- */
+  #view{flex:1;padding:18px 18px 100px;overflow-y:auto;}
+  .card{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:16px;
+    margin-bottom:14px;
+  }
+  .section-label{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.68rem;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    color:var(--ink-soft);
+    margin:0 0 10px;
+  }
+
+  /* ---------- Progress hero (signature) ---------- */
+  .marker-card{
+    background:linear-gradient(180deg,var(--primary-deep) 0%,var(--primary) 100%);
+    color:var(--paper);
+    border-radius:18px;
+    padding:22px 20px 18px;
+    position:relative;
+    overflow:hidden;
+    margin-bottom:16px;
+  }
+  .marker-card::before{
+    content:"";
+    position:absolute;top:-30px;right:-30px;width:130px;height:130px;
+    background:radial-gradient(circle,rgba(159,198,224,0.35),transparent 70%);
+  }
+  .marker-eyebrow{
+    font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:1.4px;
+    text-transform:uppercase;color:var(--primary-light);margin:0 0 6px;
+  }
+  .marker-number{
+    font-family:'Fraunces',serif;font-weight:700;font-size:3.1rem;line-height:1;
+    font-optical-sizing:auto;
+    display:flex;align-items:baseline;gap:8px;
+  }
+  .marker-number small{font-size:1.1rem;font-weight:600;color:var(--primary-light);}
+  .marker-sub{margin:8px 0 0;font-size:.85rem;color:rgba(248,249,251,0.85);}
+  .marker-badge{
+    display:inline-block;margin-top:10px;padding:4px 10px;border-radius:20px;
+    background:rgba(159,198,224,0.2);border:1px solid var(--primary-light);
+    font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--primary-light);
+  }
+
+  .progress-track{margin:22px 4px 4px;position:relative;}
+  .track-line{height:5px;background:rgba(248,249,251,0.25);border-radius:3px;position:relative;overflow:visible;}
+  .track-fill{height:100%;background:var(--primary-light);border-radius:3px;transition:width .6s ease;}
+  .dot{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:var(--paper);border:2px solid var(--primary-deep);
+    transform:translate(-50%,-50%);transition:left .6s ease;
+    box-shadow:0 2px 4px rgba(0,0,0,0.3);
+  }
+  .track-ends{display:flex;justify-content:space-between;margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:.68rem;color:rgba(248,249,251,0.75);}
+
+  /* ---------- Stat row ---------- */
+  .stat-row{display:flex;gap:10px;margin-bottom:16px;}
+  .stat-box{
+    flex:1;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;
+    padding:12px 10px;text-align:center;
+  }
+  .stat-box .val{font-family:'Fraunces',serif;font-weight:700;font-size:1.35rem;}
+  .stat-box .val.pos{color:var(--primary);}
+  .stat-box .val.neg{color:var(--alert);}
+  .stat-box .lbl{font-family:'IBM Plex Mono',monospace;font-size:.62rem;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-soft);margin-top:3px;}
+
+  /* ---------- Due card ---------- */
+  .due-card{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .due-card .txt .t1{font-size:.68rem;text-transform:uppercase;letter-spacing:1px;font-family:'IBM Plex Mono',monospace;color:var(--ink-soft);}
+  .due-card .txt .t2{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;margin-top:2px;}
+  .due-card .txt .t2.overdue{color:var(--alert);}
+  .pill-btn{
+    background:var(--primary);color:var(--paper);border:none;border-radius:10px;
+    padding:9px 14px;font-weight:600;font-size:.82rem;cursor:pointer;white-space:nowrap;
+  }
+  .pill-btn:hover{background:var(--primary-deep);}
+  .pill-btn.ghost{background:transparent;border:1.5px solid var(--primary);color:var(--primary);}
+  .pill-btn.danger{background:var(--alert);}
+  .pill-btn.danger.ghost{background:transparent;border:1.5px solid var(--alert);color:var(--alert);}
+
+  /* ---------- Sparkline ---------- */
+  .spark-wrap{margin-top:4px;}
+  .spark-wrap svg{width:100%;height:56px;display:block;}
+
+  /* ---------- Forms ---------- */
+  .form-grid{display:flex;flex-direction:column;gap:10px;}
+  .form-row{display:flex;gap:10px;}
+  .field{flex:1;display:flex;flex-direction:column;gap:5px;}
+  .field label{font-size:.7rem;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-soft);}
+  .field input,.field select{
+    border:1.5px solid var(--line);border-radius:10px;padding:10px 11px;
+    font-size:.95rem;background:var(--paper);color:var(--ink);
+  }
+  .field input:focus,.field select:focus{border-color:var(--primary);}
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px;}
+  .chip{
+    border:1.5px solid var(--line);background:var(--paper);border-radius:20px;
+    padding:5px 11px;font-size:.78rem;font-family:'IBM Plex Mono',monospace;cursor:pointer;color:var(--ink-soft);
+  }
+  .chip:hover, .chip.selected{border-color:var(--accent);color:var(--accent);background:var(--accent-pale);}
+  .form-actions{display:flex;gap:8px;margin-top:2px;}
+  .form-actions .pill-btn{flex:1;}
+  .err-msg{color:var(--alert);font-size:.78rem;margin-top:-2px;}
+
+  /* ---------- Toggle row (check-in shot switch) ---------- */
+  .toggle-row{display:flex;align-items:center;gap:10px;padding:6px 0;}
+  .toggle-row input[type="checkbox"]{width:20px;height:20px;accent-color:var(--primary);flex-shrink:0;}
+  .toggle-row label{font-size:.88rem;font-weight:600;color:var(--ink);}
+  #shotFields{display:flex;flex-direction:column;gap:10px;padding-top:10px;margin-top:2px;border-top:1px dashed var(--line);}
+  .hint-text{font-size:.78rem;color:var(--ink-soft);text-align:center;margin:-6px 0 14px;}
+
+  /* ---------- Entry lists ---------- */
+  .entry-row{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:11px 4px;border-bottom:1px solid var(--line);cursor:pointer;
+  }
+  .entry-row:last-child{border-bottom:none;}
+  .entry-row:hover{background:var(--primary-pale);}
+  .entry-left{display:flex;flex-direction:column;gap:2px;}
+  .entry-date{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--ink-soft);}
+  .entry-main{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;display:flex;align-items:center;gap:6px;}
+  .entry-main svg{width:15px;height:15px;color:var(--ink-soft);flex-shrink:0;}
+  .entry-tag{font-size:.7rem;color:var(--ink-soft);}
+  .entry-right{display:flex;align-items:center;gap:10px;}
+  .entry-delta{font-family:'IBM Plex Mono',monospace;font-size:.78rem;}
+  .entry-delta.pos{color:var(--primary);}
+  .entry-delta.neg{color:var(--alert);}
+  .del-btn{
+    width:26px;height:26px;border-radius:50%;border:1px solid var(--line);background:var(--paper);
+    color:var(--ink-soft);font-size:.95rem;line-height:1;cursor:pointer;
+  }
+  .del-btn:hover{background:var(--alert);color:var(--paper);border-color:var(--alert);}
+  .empty-state{text-align:center;padding:30px 10px;color:var(--ink-soft);}
+  .empty-state svg{width:34px;height:34px;color:var(--primary-light);margin-bottom:8px;}
+  .empty-state p{margin:4px 0 0;font-size:.85rem;}
+
+  /* ---------- Trends ---------- */
+  .range-toggle{display:flex;gap:6px;margin-bottom:14px;}
+  .range-toggle button{
+    flex:1;padding:8px;border-radius:10px;border:1.5px solid var(--line);background:var(--paper);
+    color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;font-size:.78rem;cursor:pointer;
+  }
+  .range-toggle button.active{background:var(--primary);border-color:var(--primary);color:var(--paper);}
+  .chart-legend{display:flex;gap:14px;margin-top:6px;flex-wrap:wrap;}
+  .legend-item{display:flex;align-items:center;gap:5px;font-size:.72rem;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;}
+  .legend-swatch{width:14px;height:3px;border-radius:2px;}
+  .chip-mini{
+    display:inline-flex;flex-direction:column;gap:1px;background:var(--paper);border:1px solid var(--line);
+    border-radius:10px;padding:7px 10px;margin:0 6px 6px 0;
+  }
+  .chip-mini .d1{font-family:'IBM Plex Mono',monospace;font-size:.68rem;color:var(--ink-soft);}
+  .chip-mini .d2{font-weight:600;font-size:.85rem;}
+  .chip-scroll{display:flex;flex-wrap:wrap;}
+
+  /* ---------- Tabbar ---------- */
+  .tabbar{
+    position:sticky;bottom:0;display:flex;background:var(--paper);
+    border-top:1px solid var(--line);
+    padding:8px 6px calc(8px + env(safe-area-inset-bottom));
+    z-index:20;
+  }
+  .tab-btn{
+    flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;
+    background:none;border:none;color:var(--ink-soft);cursor:pointer;padding:6px 2px;border-radius:10px;
+  }
+  .tab-btn svg{width:20px;height:20px;}
+  .tab-btn span{font-size:.63rem;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.4px;}
+  .tab-btn.active{color:var(--primary-deep);background:var(--primary-pale);}
+
+  /* ---------- Modal ---------- */
+  .modal-overlay{
+    position:fixed;inset:0;background:rgba(28,36,48,0.55);z-index:50;
+    display:flex;align-items:flex-end;justify-content:center;
+  }
+  .modal-sheet{
+    background:var(--paper);width:100%;max-width:460px;border-radius:20px 20px 0 0;
+    padding:20px 20px calc(20px + env(safe-area-inset-bottom));max-height:88vh;overflow-y:auto;
+  }
+  .modal-sheet h2{font-size:1.2rem;margin-bottom:4px;}
+  .modal-sub{font-size:.8rem;color:var(--ink-soft);margin:0 0 16px;}
+  .unit-toggle{display:flex;border:1.5px solid var(--line);border-radius:10px;overflow:hidden;}
+  .unit-toggle button{flex:1;padding:9px;border:none;background:var(--paper);color:var(--ink-soft);cursor:pointer;font-weight:600;}
+  .unit-toggle button.active{background:var(--primary);color:var(--paper);}
+
+  /* ---------- Onboarding ---------- */
+  #onboard{padding:26px 22px;min-height:100vh;display:flex;flex-direction:column;justify-content:center;}
+  #onboard h1{font-size:1.7rem;color:var(--primary-deep);margin-bottom:6px;}
+  #onboard p.lead{color:var(--ink-soft);margin:0 0 20px;font-size:.92rem;}
+
+  /* ---------- Lock screen ---------- */
+  #lockScreen{
+    min-height:100vh;display:flex;flex-direction:column;justify-content:center;
+    padding:30px 26px;text-align:center;background:var(--primary-deep);color:var(--paper);
+  }
+  .lock-icon-wrap{
+    width:58px;height:58px;border-radius:50%;background:rgba(248,249,251,0.12);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 16px;
+  }
+  .lock-icon-wrap svg{width:26px;height:26px;color:var(--primary-light);}
+  #lockScreen h1{color:var(--paper);font-size:1.4rem;margin-bottom:6px;}
+  #lockScreen p.lead{color:rgba(248,249,251,0.75);font-size:.85rem;margin-bottom:22px;}
+  #lockScreen input{
+    text-align:center;letter-spacing:3px;font-size:1.15rem;padding:14px;border-radius:12px;
+    border:none;margin-bottom:12px;width:100%;background:var(--paper);color:var(--ink);
+  }
+  #lockScreen .err-msg{color:#F3C6C2;margin-bottom:10px;}
+  #lockScreen .reset-link{
+    margin-top:20px;background:none;border:none;color:rgba(248,249,251,0.65);
+    font-size:.78rem;text-decoration:underline;cursor:pointer;
+  }
+
+  .storage-warn{
+    background:var(--alert);color:#fff;padding:10px 16px;font-size:.76rem;text-align:center;
+    line-height:1.4;
+  }
+
+  .toast{
+    position:fixed;bottom:90px;left:50%;transform:translateX(-50%);
+    background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:10px;
+    font-size:.82rem;z-index:80;opacity:0;pointer-events:none;transition:opacity .3s ease;
+  }
+  .toast.show{opacity:1;}
+
+  .loading-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh;color:var(--ink-soft);gap:10px;}
+  .loading-wrap svg{width:30px;height:30px;color:var(--primary);animation:spin 1s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+</style>
+
+<div id="app-shell">
+  <div id="root"></div>
+</div>
+<div id="modalRoot"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ============== ICONS ============== */
+  const ICONS = {
+    target: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="4.4"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>`,
+    plusCircle: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>`,
+    list: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 3.5h6v2H9z"/><line x1="8" y1="10.5" x2="16" y2="10.5"/><line x1="8" y1="14.5" x2="16" y2="14.5"/><line x1="8" y1="18.5" x2="12" y2="18.5"/></svg>`,
+    scale: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16a8 8 0 0 1 16 0"/><line x1="12" y1="16" x2="15.2" y2="10.8"/><line x1="3" y1="16" x2="21" y2="16"/></svg>`,
+    syringe: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="3" x2="18" y2="6"/><line x1="19.5" y1="7.5" x2="17" y2="5"/><path d="M16 6 8 14"/><path d="M8 14l-4.5 4.5"/><path d="M13 9l2 2"/><path d="M11 11l2 2"/><path d="M15 5l4 4-2.5 2.5-4-4Z"/></svg>`,
+    trend: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,17 10,11 14,15 20,6"/><polyline points="14,6 20,6 20,12"/></svg>`,
+    gear: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a7.9 7.9 0 0 0 0-6l2-1.7-2-3.4-2.5 1a8 8 0 0 0-2.1-1.2L14.4 1h-4l-.4 2.7a8 8 0 0 0-2.1 1.2l-2.5-1-2 3.4L5.4 9a7.9 7.9 0 0 0 0 6l-2 1.7 2 3.4 2.5-1a8 8 0 0 0 2.1 1.2l.4 2.7h4l.4-2.7a8 8 0 0 0 2.1-1.2l2.5 1 2-3.4Z"/></svg>`,
+    lock: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>`,
+    spinner: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 2a10 10 0 0 1 10 10"/></svg>`
+  };
+
+  /* ============== STATE ============== */
+  let settings = null;
+  let weightEntries = [];
+  let injections = [];
+  let authHash = null;
+  let storageOK = true;
+  let activeTab = 'home';
+  let editingWeightId = null;
+  let editingShotId = null;
+  let checkinPrefillShot = false;
+  let trendsRange = 90;
+  let chartRef = null;
+  let barChartRef = null;
+
+  const $root = document.getElementById('root');
+  const $modalRoot = document.getElementById('modalRoot');
+  const $toast = document.getElementById('toast');
+
+  /* ============== STORAGE (localStorage, on-device only) ============== */
+  const LS_PREFIX = 'pl_';
+  function lsGet(key){
+    try{
+      const v = localStorage.getItem(LS_PREFIX+key);
+      return v ? JSON.parse(v) : null;
+    }catch(e){ return null; }
+  }
+  function lsSet(key, val){
+    try{
+      localStorage.setItem(LS_PREFIX+key, JSON.stringify(val));
+      return true;
+    }catch(e){
+      showToast("Couldn't save — storage may be full");
+      return false;
+    }
+  }
+  function lsRemove(key){
+    try{ localStorage.removeItem(LS_PREFIX+key); }catch(e){}
+  }
+  async function storGet(key){ return lsGet(key); }
+  async function storSet(key, val){ return lsSet(key, val); }
+  function testStorage(){
+    try{
+      const testKey = LS_PREFIX+'__test__';
+      localStorage.setItem(testKey, '1');
+      const ok = localStorage.getItem(testKey) === '1';
+      localStorage.removeItem(testKey);
+      return ok;
+    }catch(e){ return false; }
+  }
+  function warningBanner(){
+    return storageOK ? '' : `<div class="storage-warn">This page can't save anything right now — including your passcode and entries. Open it directly in Safari (not a preview) for saving to work.</div>`;
+  }
+
+  function showToast(msg){
+    $toast.textContent = msg;
+    $toast.classList.add('show');
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(()=> $toast.classList.remove('show'), 2400);
+  }
+
+  /* ============== PASSWORD ============== */
+  async function hashPassword(pw){
+    const payload = 'pl-salt-v1-'+pw;
+    try{
+      if(window.crypto && window.crypto.subtle){
+        const enc = new TextEncoder().encode(payload);
+        const buf = await window.crypto.subtle.digest('SHA-256', enc);
+        return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+      }
+    }catch(e){}
+    let h = 0;
+    for(let i=0;i<payload.length;i++){ h = (h*31 + payload.charCodeAt(i)) >>> 0; }
+    return 'fb'+h.toString(16);
+  }
+
+  /* ============== UTILS ============== */
+  function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
+  function todayISO(){ return new Date().toISOString().slice(0,10); }
+  function round1(n){ return Math.round(n*10)/10; }
+  function toDate(iso){ return new Date(iso+"T00:00:00"); }
+  function daysBetween(a,b){ return Math.round((toDate(b)-toDate(a))/86400000); }
+  function fmtDateShort(iso){ return toDate(iso).toLocaleDateString('en-US',{month:'short',day:'numeric'}); }
+  function fmtDateFull(iso){ return toDate(iso).toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}); }
+  function unitLabel(){ return settings.units === 'kg' ? 'kg' : 'lbs'; }
+  function sortedWeights(){ return [...weightEntries].sort((a,b)=> a.date.localeCompare(b.date)); }
+  function sortedShots(){ return [...injections].sort((a,b)=> a.date.localeCompare(b.date)); }
+  function latestWeight(){ const s = sortedWeights(); return s.length ? s[s.length-1] : null; }
+  function escapeHtml(s){ return s.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+  /* ============== COMPUTATION ============== */
+  function currentWeightVal(){ const lw = latestWeight(); return lw ? lw.weight : settings.startWeight; }
+  function progressPercent(){
+    const start = settings.startWeight, goal = settings.goalWeight, cur = currentWeightVal();
+    if(start === goal) return 100;
+    let pct = ((start - cur) / (start - goal)) * 100;
+    if(!isFinite(pct)) pct = 0;
+    return Math.max(0, Math.min(100, pct));
+  }
+  function weeklyRateStat(){
+    const s = sortedWeights();
+    if(s.length < 2) return null;
+    const last = s[s.length-1];
+    let ref = null;
+    for(let i=s.length-2;i>=0;i--){
+      const gap = daysBetween(s[i].date, last.date);
+      if(gap >= 3){ ref = s[i]; break; }
+    }
+    if(!ref) return null;
+    const gapDays = daysBetween(ref.date, last.date);
+    const delta = ref.weight - last.weight;
+    return round1(delta * (7/gapDays));
+  }
+  function avgWeeklyPace(){
+    if(!latestWeight()) return null;
+    const daysSinceStart = daysBetween(settings.startDate, todayISO());
+    if(daysSinceStart < 7) return null;
+    const totalLost = settings.startWeight - currentWeightVal();
+    return round1(totalLost / (daysSinceStart/7));
+  }
+  function nextInjectionDue(){
+    const s = sortedShots();
+    if(!s.length) return null;
+    const last = s[s.length-1];
+    const d = toDate(last.date);
+    d.setDate(d.getDate() + (settings.intervalDays||7));
+    return d.toISOString().slice(0,10);
+  }
+  function startOfWeek(iso){
+    const d = toDate(iso);
+    const day = d.getDay();
+    const diff = (day===0? -6 : 1-day);
+    d.setDate(d.getDate()+diff);
+    return d.toISOString().slice(0,10);
+  }
+  function weeklyBuckets(){
+    const s = sortedWeights();
+    const map = {};
+    s.forEach(e=>{
+      const key = startOfWeek(e.date);
+      if(!map[key] || e.date > map[key].date) map[key] = e;
+    });
+    const keys = Object.keys(map).sort();
+    return keys.map(k=>({week:k, weight:map[k].weight}));
+  }
+
+  /* ============== SHELL / TABS ============== */
+  function renderShell(){
+    $root.innerHTML = `
+      ${warningBanner()}
+      <header class="topbar">
+        <div class="brand">
+          ${ICONS.target}
+          <div>
+            <h1>Progress Log</h1>
+            <p>Weight &amp; injection tracker</p>
+          </div>
+        </div>
+        <button class="icon-btn" id="settingsBtn" aria-label="Settings">${ICONS.gear}</button>
+      </header>
+      <main id="view" class="view"></main>
+      <nav class="tabbar" id="tabbar">
+        ${tabBtn('home', ICONS.target, 'Home')}
+        ${tabBtn('checkin', ICONS.plusCircle, 'Check-in')}
+        ${tabBtn('history', ICONS.list, 'History')}
+        ${tabBtn('trends', ICONS.trend, 'Trends')}
+      </nav>
+    `;
+    document.getElementById('settingsBtn').addEventListener('click', openSettingsModal);
+    document.querySelectorAll('.tab-btn').forEach(b=>{
+      b.addEventListener('click', ()=>{ activeTab = b.dataset.tab; renderTab(); });
+    });
+    renderTab();
+  }
+  function tabBtn(id, icon, label){
+    return `<button class="tab-btn${activeTab===id?' active':''}" data-tab="${id}">${icon}<span>${label}</span></button>`;
+  }
+  function refreshTabbarActive(){
+    document.querySelectorAll('.tab-btn').forEach(b=> b.classList.toggle('active', b.dataset.tab === activeTab));
+  }
+  function renderTab(){
+    refreshTabbarActive();
+    const $view = document.getElementById('view');
+    if(activeTab==='home') $view.innerHTML = renderHome();
+    else if(activeTab==='checkin'){ $view.innerHTML = renderCheckinTab(); bindCheckinTab(); }
+    else if(activeTab==='history'){ $view.innerHTML = renderHistoryTab(); bindHistoryTab(); }
+    else if(activeTab==='trends'){ $view.innerHTML = renderTrendsTab(); bindTrendsTab(); }
+    $view.scrollTop = 0;
+  }
+
+  /* ============== HOME ============== */
+  function renderHome(){
+    const cur = currentWeightVal();
+    const goal = settings.goalWeight;
+    const toGoal = round1(cur - goal);
+    const pct = progressPercent();
+    const totalLost = round1(settings.startWeight - cur);
+    const weekly = weeklyRateStat();
+    const pace = avgWeeklyPace();
+    const due = nextInjectionDue();
+
+    let markerNumber, badge='';
+    if(toGoal <= 0){
+      markerNumber = `${Math.abs(toGoal)} <small>${unitLabel()} past goal</small>`;
+      badge = `<span class="marker-badge">Goal reached</span>`;
+    } else {
+      markerNumber = `${toGoal} <small>${unitLabel()} to go</small>`;
+    }
+
+    const s = sortedWeights();
+    const spark = s.length >= 2 ? sparklineSVG(s.slice(-12)) : '';
+
+    return `
+      <div class="marker-card">
+        <p class="marker-eyebrow">To goal</p>
+        <div class="marker-number">${markerNumber}</div>
+        <p class="marker-sub">${cur} ${unitLabel()} now &middot; goal ${goal} ${unitLabel()}</p>
+        ${badge}
+        <div class="progress-track">
+          <div class="track-line"><div class="track-fill" style="width:${pct}%"></div>
+            <div class="dot" style="left:${pct}%"></div>
+          </div>
+          <div class="track-ends"><span>Start &middot; ${settings.startWeight}</span><span>Goal &middot; ${goal}</span></div>
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-box"><div class="val ${totalLost>=0?'pos':'neg'}">${totalLost>=0?'':'+'}${Math.abs(totalLost)}</div><div class="lbl">${totalLost>=0?'Lost total':'Gained total'}</div></div>
+        <div class="stat-box"><div class="val ${weekly==null?'':(weekly>=0?'pos':'neg')}">${weekly==null?'—':(weekly>=0?'':'+')+Math.abs(weekly)}</div><div class="lbl">This week</div></div>
+        <div class="stat-box"><div class="val ${pace==null?'':(pace>=0?'pos':'neg')}">${pace==null?'—':(pace>=0?'':'+')+Math.abs(pace)}</div><div class="lbl">Avg / week</div></div>
+      </div>
+
+      <div class="card due-card">
+        <div class="txt">
+          <div class="t1">Next shot</div>
+          <div class="t2 ${due && due < todayISO() ? 'overdue':''}">${dueText(due)}</div>
+        </div>
+        <button class="pill-btn" id="homeLogShot">Log shot</button>
+      </div>
+
+      ${s.length>=2 ? `
+      <div class="card">
+        <p class="section-label">Last ${Math.min(s.length,12)} weigh-ins</p>
+        <div class="spark-wrap">${spark}</div>
+      </div>` : `
+      <div class="card empty-state">
+        ${ICONS.list}
+        <p>Log a couple of weigh-ins to see your trend line here.</p>
+      </div>`}
+    `;
+  }
+  function dueText(due){
+    if(!due) return 'Log your first shot';
+    const days = daysBetween(todayISO(), due);
+    if(days === 0) return `Due today (${fmtDateShort(due)})`;
+    if(days < 0) return `Overdue since ${fmtDateShort(due)}`;
+    if(days === 1) return `Due tomorrow`;
+    return `Due in ${days} days &middot; ${fmtDateShort(due)}`;
+  }
+  function sparklineSVG(entries){
+    const w = 400, h = 56, pad = 4;
+    const vals = entries.map(e=>e.weight);
+    const min = Math.min(...vals), max = Math.max(...vals);
+    const range = (max-min) || 1;
+    const stepX = (w - pad*2) / (entries.length-1);
+    const pts = entries.map((e,i)=>{
+      const x = pad + i*stepX;
+      const y = h - pad - ((e.weight-min)/range)*(h-pad*2);
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    });
+    const last = pts[pts.length-1].split(',');
+    return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+      <polyline points="${pts.join(' ')}" fill="none" stroke="#2E6089" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="${last[0]}" cy="${last[1]}" r="4" fill="#1F3A5C"/>
+    </svg>`;
+  }
+  document.addEventListener('click', (e)=>{
+    if(e.target && e.target.id === 'homeLogShot'){ checkinPrefillShot = true; activeTab='checkin'; renderTab(); }
+  });
+
+  /* ============== SHARED CONSTS ============== */
+  const DOSE_CHIPS = [0.25, 0.5, 1, 1.7, 2, 2.4];
+  const SITES = ['Abdomen','Thigh','Upper arm','Other'];
+
+  /* ============== CHECK-IN TAB (weight + optional same-day shot) ============== */
+  function renderCheckinTab(){
+    const ew = editingWeightId ? weightEntries.find(x=>x.id===editingWeightId) : null;
+    const es = editingShotId ? injections.find(x=>x.id===editingShotId) : null;
+    const isEditing = !!(ew || es);
+    const date = (ew && ew.date) || (es && es.date) || todayISO();
+    const shotChecked = !!es || checkinPrefillShot;
+    checkinPrefillShot = false;
+
+    return `
+      <div class="card">
+        <p class="section-label">${isEditing? 'Update check-in':'Log a check-in'}</p>
+        <div class="form-grid">
+          <div class="form-row">
+            <div class="field"><label>Date</label><input type="date" id="cDate" max="${todayISO()}" value="${date}"></div>
+            <div class="field"><label>Weight (${unitLabel()})</label><input type="number" step="0.1" min="0" id="cWeight" value="${ew?ew.weight:''}" placeholder="e.g. 210.4"></div>
+          </div>
+          <div class="field"><label>Note (optional)</label><input type="text" id="cWeightNote" value="${ew&&ew.note?escapeHtml(ew.note):''}" placeholder="How's it going?"></div>
+
+          <div class="toggle-row">
+            <input type="checkbox" id="cShotToggle" ${shotChecked?'checked':''}>
+            <label for="cShotToggle">Also logging a shot on this date</label>
+          </div>
+
+          <div id="shotFields" style="${shotChecked?'':'display:none;'}">
+            <div class="form-row">
+              <div class="field"><label>Dose (mg)</label><input type="number" step="0.05" min="0" id="cDose" value="${es?es.dose:''}" placeholder="e.g. 1.0"></div>
+              <div class="field"><label>Site</label>
+                <select id="cSite">
+                  ${SITES.map(site=>`<option value="${site}" ${es&&es.site===site?'selected':''}>${site}</option>`).join('')}
+                </select>
+              </div>
+            </div>
+            <div class="chip-row" id="doseChips">
+              ${DOSE_CHIPS.map(d=>`<span class="chip" data-dose="${d}">${d} mg</span>`).join('')}
+            </div>
+            <div class="field"><label>Shot note (optional)</label><input type="text" id="cShotNote" value="${es&&es.note?escapeHtml(es.note):''}" placeholder="Side effects, timing, etc."></div>
+          </div>
+
+          <p class="err-msg" id="cErr" style="display:none;"></p>
+          <div class="form-actions">
+            <button class="pill-btn" id="cSaveBtn">${isEditing?'Update check-in':'Save check-in'}</button>
+            ${isEditing?'<button class="pill-btn ghost" id="cCancelBtn">Cancel</button>':''}
+          </div>
+        </div>
+      </div>
+      <p class="hint-text">Leave weight blank to log a shot-only entry — everything ties together by date.</p>
+    `;
+  }
+
+  function bindCheckinTab(){
+    const toggle = document.getElementById('cShotToggle');
+    const shotFields = document.getElementById('shotFields');
+    toggle.addEventListener('change', ()=>{ shotFields.style.display = toggle.checked ? '' : 'none'; });
+
+    document.querySelectorAll('#doseChips .chip').forEach(chip=>{
+      chip.addEventListener('click', ()=>{
+        document.getElementById('cDose').value = chip.dataset.dose;
+        document.querySelectorAll('#doseChips .chip').forEach(c=>c.classList.remove('selected'));
+        chip.classList.add('selected');
+      });
+    });
+
+    document.getElementById('cSaveBtn').addEventListener('click', async ()=>{
+      const date = document.getElementById('cDate').value;
+      const weightRaw = document.getElementById('cWeight').value;
+      const weightNote = document.getElementById('cWeightNote').value.trim();
+      const shotOn = document.getElementById('cShotToggle').checked;
+      const doseRaw = document.getElementById('cDose') ? document.getElementById('cDose').value : '';
+      const site = document.getElementById('cSite') ? document.getElementById('cSite').value : SITES[0];
+      const shotNote = document.getElementById('cShotNote') ? document.getElementById('cShotNote').value.trim() : '';
+      const err = document.getElementById('cErr');
+      err.style.display = 'none';
+
+      if(!date){ err.textContent='Pick a date.'; err.style.display='block'; return; }
+
+      const hasWeight = weightRaw !== '';
+      let weightVal = null;
+      if(hasWeight){
+        weightVal = parseFloat(weightRaw);
+        if(isNaN(weightVal) || weightVal<=0){ err.textContent='Enter a valid weight, or leave it blank.'; err.style.display='block'; return; }
+      } else if(editingWeightId){
+        err.textContent='Weight is required when editing a weigh-in. Delete it from History instead.';
+        err.style.display='block';
+        return;
+      } else if(!shotOn){
+        err.textContent='Enter a weight or turn on "logging a shot" (or both).';
+        err.style.display='block';
+        return;
+      }
+
+      let doseVal = null;
+      if(shotOn){
+        doseVal = parseFloat(doseRaw);
+        if(isNaN(doseVal) || doseVal<0){ err.textContent='Enter a valid dose for the shot.'; err.style.display='block'; return; }
+      }
+
+      if(hasWeight){
+        let targetId = editingWeightId;
+        if(!targetId){
+          const existing = weightEntries.find(x=>x.date===date);
+          if(existing) targetId = existing.id;
+        }
+        if(targetId){
+          const idx = weightEntries.findIndex(x=>x.id===targetId);
+          weightEntries[idx] = {...weightEntries[idx], date, weight:weightVal, note:weightNote};
+        } else {
+          weightEntries.push({id:uid(), date, weight:weightVal, note:weightNote});
+        }
+        await storSet('weight_entries', weightEntries);
+      }
+
+      if(shotOn){
+        let targetId = editingShotId;
+        if(!targetId){
+          const existing = injections.find(x=>x.date===date);
+          if(existing) targetId = existing.id;
+        }
+        if(targetId){
+          const idx = injections.findIndex(x=>x.id===targetId);
+          injections[idx] = {...injections[idx], date, dose:doseVal, site, note:shotNote};
+        } else {
+          injections.push({id:uid(), date, dose:doseVal, site, note:shotNote});
+        }
+        await storSet('injections', injections);
+      } else if(editingShotId){
+        injections = injections.filter(x=>x.id!==editingShotId);
+        await storSet('injections', injections);
+      }
+
+      editingWeightId = null; editingShotId = null;
+      showToast('Check-in saved');
+      activeTab = 'home';
+      renderTab();
+    });
+
+    const cancelBtn = document.getElementById('cCancelBtn');
+    if(cancelBtn) cancelBtn.addEventListener('click', ()=>{ editingWeightId=null; editingShotId=null; renderTab(); });
+  }
+
+  /* ============== HISTORY TAB ============== */
+  function renderHistoryTab(){
+    const w = [...sortedWeights()].reverse();
+    const s = [...sortedShots()].reverse();
+    return `
+      <div class="card">
+        <p class="section-label">Weigh-ins</p>
+        ${w.length===0? emptyBlock('Nothing logged yet. Add one from Check-in.') : w.map((e,i)=>weightRow(e, w[i+1])).join('')}
+      </div>
+      <div class="card">
+        <p class="section-label">Shots</p>
+        ${s.length===0? emptyBlock('No injections logged yet. Add one from Check-in.') : s.map(e=>shotRow(e)).join('')}
+      </div>
+    `;
+  }
+  function weightRow(e, prev){
+    const delta = prev ? round1(prev.weight - e.weight) : null;
+    return `
+      <div class="entry-row" data-id="${e.id}" data-kind="w">
+        <div class="entry-left">
+          <span class="entry-date">${fmtDateFull(e.date)}</span>
+          <span class="entry-main">${ICONS.scale}${e.weight} ${unitLabel()}</span>
+          ${e.note?`<span class="entry-tag">${escapeHtml(e.note)}</span>`:''}
+        </div>
+        <div class="entry-right">
+          ${delta!==null? `<span class="entry-delta ${delta>=0?'pos':'neg'}">${delta>=0?'-':'+'}${Math.abs(delta)}</span>`:''}
+          <button class="del-btn" data-del="${e.id}" data-kind="w" aria-label="Delete">×</button>
+        </div>
+      </div>`;
+  }
+  function shotRow(e){
+    return `
+      <div class="entry-row" data-id="${e.id}" data-kind="s">
+        <div class="entry-left">
+          <span class="entry-date">${fmtDateFull(e.date)}</span>
+          <span class="entry-main">${ICONS.syringe}${e.dose} mg</span>
+          <span class="entry-tag">${e.site}${e.note?' · '+escapeHtml(e.note):''}</span>
+        </div>
+        <div class="entry-right">
+          <button class="del-btn" data-del="${e.id}" data-kind="s" aria-label="Delete">×</button>
+        </div>
+      </div>`;
+  }
+  function emptyBlock(text){ return `<div class="empty-state">${ICONS.list}<p>${text}</p></div>`; }
+
+  function editFromWeight(id){
+    editingWeightId = id;
+    const w = weightEntries.find(x=>x.id===id);
+    const matchingShot = w ? injections.find(x=>x.date===w.date) : null;
+    editingShotId = matchingShot ? matchingShot.id : null;
+    activeTab = 'checkin';
+    renderTab();
+  }
+  function editFromShot(id){
+    editingShotId = id;
+    const sh = injections.find(x=>x.id===id);
+    const matchingWeight = sh ? weightEntries.find(x=>x.date===sh.date) : null;
+    editingWeightId = matchingWeight ? matchingWeight.id : null;
+    activeTab = 'checkin';
+    renderTab();
+  }
+
+  function bindHistoryTab(){
+    document.querySelectorAll('[data-kind="w"].entry-row').forEach(row=>{
+      row.addEventListener('click', (ev)=>{ if(ev.target.closest('.del-btn')) return; editFromWeight(row.dataset.id); });
+    });
+    document.querySelectorAll('.del-btn[data-kind="w"]').forEach(btn=>{
+      btn.addEventListener('click', async (ev)=>{
+        ev.stopPropagation();
+        if(!confirm('Delete this weigh-in?')) return;
+        const id = btn.dataset.del;
+        weightEntries = weightEntries.filter(x=>x.id!==id);
+        if(editingWeightId===id) editingWeightId=null;
+        await storSet('weight_entries', weightEntries);
+        renderTab();
+      });
+    });
+    document.querySelectorAll('[data-kind="s"].entry-row').forEach(row=>{
+      row.addEventListener('click', (ev)=>{ if(ev.target.closest('.del-btn')) return; editFromShot(row.dataset.id); });
+    });
+    document.querySelectorAll('.del-btn[data-kind="s"]').forEach(btn=>{
+      btn.addEventListener('click', async (ev)=>{
+        ev.stopPropagation();
+        if(!confirm('Delete this injection?')) return;
+        const id = btn.dataset.del;
+        injections = injections.filter(x=>x.id!==id);
+        if(editingShotId===id) editingShotId=null;
+        await storSet('injections', injections);
+        renderTab();
+      });
+    });
+  }
+
+  /* ============== TRENDS TAB ============== */
+  function renderTrendsTab(){
+    const s = sortedWeights();
+    if(s.length < 2){
+      return `<div class="card empty-state">${ICONS.list}<p>Log at least two weigh-ins to unlock your charts.</p></div>`;
+    }
+    return `
+      <div class="range-toggle">
+        <button data-range="30" class="${trendsRange===30?'active':''}">30d</button>
+        <button data-range="90" class="${trendsRange===90?'active':''}">90d</button>
+        <button data-range="all" class="${trendsRange==='all'?'active':''}">All</button>
+      </div>
+      <div class="card">
+        <p class="section-label">Weight over time</p>
+        <div style="height:220px;"><canvas id="weightChart"></canvas></div>
+        <div class="chart-legend">
+          <span class="legend-item"><span class="legend-swatch" style="background:#2E6089"></span>Actual</span>
+          <span class="legend-item"><span class="legend-swatch" style="background:#C08A2E"></span>7-day trend</span>
+          <span class="legend-item"><span class="legend-swatch" style="background:#B24444"></span>Goal</span>
+        </div>
+      </div>
+      <div class="card">
+        <p class="section-label">Weekly pace (${unitLabel()} per week)</p>
+        <div style="height:150px;"><canvas id="paceChart"></canvas></div>
+      </div>
+      <div class="card">
+        <p class="section-label">Shots in range</p>
+        <div id="shotChips" class="chip-scroll"></div>
+      </div>
+    `;
+  }
+  function rangeStartDate(){
+    if(trendsRange==='all'){
+      const all = [...weightEntries.map(e=>e.date), ...injections.map(e=>e.date)];
+      return all.length ? all.sort()[0] : todayISO();
+    }
+    const d = new Date();
+    d.setDate(d.getDate() - trendsRange);
+    return d.toISOString().slice(0,10);
+  }
+  function bindTrendsTab(){
+    document.querySelectorAll('.range-toggle button').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const r = btn.dataset.range;
+        trendsRange = r==='all' ? 'all' : parseInt(r,10);
+        renderTab();
+      });
+    });
+
+    const rStart = rangeStartDate();
+    const rEnd = todayISO();
+    const allWeights = sortedWeights();
+    const trendAll = rollingTrend(allWeights, 7);
+    const inRange = allWeights.filter(e=> e.date >= rStart && e.date <= rEnd);
+    const labels = inRange.map(e=> fmtDateShort(e.date));
+    const actualData = inRange.map(e=> e.weight);
+    const trendData = inRange.map(e=>{
+      const idx = allWeights.findIndex(x=>x.date===e.date);
+      return trendAll[idx];
+    });
+    const goalData = inRange.map(()=> settings.goalWeight);
+
+    if(chartRef) chartRef.destroy();
+    const ctx = document.getElementById('weightChart');
+    if(ctx && window.Chart){
+      chartRef = new Chart(ctx, {
+        type:'line',
+        data:{
+          labels,
+          datasets:[
+            {label:'Actual', data:actualData, borderColor:'#2E6089', backgroundColor:'rgba(159,198,224,0.22)', fill:true, tension:0.25, pointRadius:2.5, borderWidth:2.2},
+            {label:'7-day trend', data:trendData, borderColor:'#C08A2E', borderDash:[5,4], pointRadius:0, borderWidth:2, tension:0.3},
+            {label:'Goal', data:goalData, borderColor:'#B24444', borderDash:[2,3], pointRadius:0, borderWidth:1.6}
+          ]
+        },
+        options:{
+          responsive:true, maintainAspectRatio:false,
+          plugins:{ legend:{display:false} },
+          scales:{
+            x:{ ticks:{ maxTicksLimit:6, font:{family:"'IBM Plex Mono', monospace", size:10}, color:'#5B6675' }, grid:{ display:false } },
+            y:{ ticks:{ font:{family:"'IBM Plex Mono', monospace", size:10}, color:'#5B6675' }, grid:{ color:'#E4E8EE' } }
+          }
+        }
+      });
+    }
+
+    const weeks = weeklyBuckets().filter(w=> w.week >= rStart);
+    const paceLabels = weeks.slice(1).map(w=> fmtDateShort(w.week));
+    const paceData = weeks.slice(1).map((w,i)=> round1(weeks[i].weight - w.weight));
+    if(barChartRef) barChartRef.destroy();
+    const ctx2 = document.getElementById('paceChart');
+    if(ctx2 && window.Chart){
+      barChartRef = new Chart(ctx2, {
+        type:'bar',
+        data:{ labels:paceLabels, datasets:[{ data:paceData, backgroundColor: paceData.map(v=> v>=0 ? '#9FC6E0' : '#E3B3AF'), borderRadius:4 }]},
+        options:{
+          responsive:true, maintainAspectRatio:false,
+          plugins:{ legend:{display:false} },
+          scales:{
+            x:{ ticks:{ font:{family:"'IBM Plex Mono', monospace", size:9}, color:'#5B6675' }, grid:{ display:false } },
+            y:{ ticks:{ font:{family:"'IBM Plex Mono', monospace", size:9}, color:'#5B6675' }, grid:{ color:'#E4E8EE' } }
+          }
+        }
+      });
+    }
+
+    const shotsInRange = sortedShots().filter(e=> e.date >= rStart && e.date <= rEnd).reverse();
+    const chipsWrap = document.getElementById('shotChips');
+    if(chipsWrap){
+      chipsWrap.innerHTML = shotsInRange.length ? shotsInRange.map(e=>`
+        <span class="chip-mini"><span class="d1">${fmtDateShort(e.date)}</span><span class="d2">${e.dose} mg · ${e.site}</span></span>
+      `).join('') : `<p style="color:var(--ink-soft);font-size:.85rem;">No injections in this range.</p>`;
+    }
+  }
+  function rollingTrend(entriesAsc, windowDays){
+    return entriesAsc.map((e)=>{
+      const win = entriesAsc.filter(x=> x.date <= e.date && daysBetween(x.date, e.date) < windowDays);
+      const avg = win.reduce((s,x)=>s+x.weight,0) / win.length;
+      return round1(avg);
+    });
+  }
+
+  /* ============== SETTINGS MODAL ============== */
+  function openSettingsModal(){
+    $modalRoot.innerHTML = `
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-sheet">
+          <h2>Settings</h2>
+          <p class="modal-sub">Adjust your starting point, goal, and injection schedule.</p>
+          <div class="form-grid">
+            <div class="field"><label>Units</label>
+              <div class="unit-toggle">
+                <button type="button" data-unit="lbs" class="${settings.units==='lbs'?'active':''}">lbs</button>
+                <button type="button" data-unit="kg" class="${settings.units==='kg'?'active':''}">kg</button>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label>Starting weight</label><input type="number" step="0.1" id="mStart" value="${settings.startWeight}"></div>
+              <div class="field"><label>Starting date</label><input type="date" id="mStartDate" max="${todayISO()}" value="${settings.startDate}"></div>
+            </div>
+            <div class="field"><label>Goal weight</label><input type="number" step="0.1" id="mGoal" value="${settings.goalWeight}"></div>
+            <div class="field"><label>Injection interval (days)</label><input type="number" step="1" min="1" id="mInterval" value="${settings.intervalDays}"></div>
+            <p class="err-msg" id="mErr" style="display:none;"></p>
+            <div class="form-actions">
+              <button class="pill-btn" id="mSave">Save changes</button>
+              <button class="pill-btn ghost" id="mClose">Close</button>
+            </div>
+          </div>
+
+          <hr style="border:none;border-top:1px solid var(--line);margin:18px 0;">
+          <p class="section-label">Security</p>
+          <div class="form-actions" style="margin-bottom:8px;">
+            <button class="pill-btn ghost" id="mChangePw">Change passcode</button>
+            <button class="pill-btn ghost" id="mLockNow">Lock now</button>
+          </div>
+          <div id="pwFields" style="display:none;" class="form-grid">
+            <div class="form-row">
+              <div class="field"><label>New passcode</label><input type="password" id="mNewPw" autocomplete="off"></div>
+              <div class="field"><label>Confirm</label><input type="password" id="mNewPw2" autocomplete="off"></div>
+            </div>
+            <p class="err-msg" id="mPwErr" style="display:none;"></p>
+            <button class="pill-btn" id="mSavePw">Update passcode</button>
+          </div>
+
+          <hr style="border:none;border-top:1px solid var(--line);margin:18px 0;">
+          <button class="pill-btn danger ghost" id="mReset" style="width:100%;">Reset all data</button>
+        </div>
+      </div>
+    `;
+    let pendingUnit = settings.units;
+    document.querySelectorAll('[data-unit]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        pendingUnit = btn.dataset.unit;
+        document.querySelectorAll('[data-unit]').forEach(b=>b.classList.toggle('active', b===btn));
+      });
+    });
+    document.getElementById('modalOverlay').addEventListener('click', (e)=>{ if(e.target.id==='modalOverlay') closeModal(); });
+    document.getElementById('mClose').addEventListener('click', closeModal);
+
+    document.getElementById('mSave').addEventListener('click', async ()=>{
+      const startWeight = parseFloat(document.getElementById('mStart').value);
+      const startDate = document.getElementById('mStartDate').value;
+      const goalWeight = parseFloat(document.getElementById('mGoal').value);
+      const intervalDays = parseInt(document.getElementById('mInterval').value,10);
+      const err = document.getElementById('mErr');
+      if(isNaN(startWeight)||isNaN(goalWeight)||!startDate||isNaN(intervalDays)||intervalDays<1){
+        err.textContent = 'Please fill in every field with valid values.';
+        err.style.display='block';
+        return;
+      }
+      let factor = 1;
+      if(pendingUnit !== settings.units){ factor = pendingUnit==='kg' ? (1/2.20462) : 2.20462; }
+      settings = { units: pendingUnit, startWeight: round1(startWeight*factor), startDate, goalWeight: round1(goalWeight*factor), intervalDays };
+      if(factor !== 1){
+        weightEntries = weightEntries.map(e=> ({...e, weight: round1(e.weight*factor)}));
+        await storSet('weight_entries', weightEntries);
+      }
+      await storSet('settings', settings);
+      showToast('Settings saved');
+      closeModal();
+      renderTab();
+    });
+
+    document.getElementById('mChangePw').addEventListener('click', ()=>{
+      const el = document.getElementById('pwFields');
+      el.style.display = el.style.display==='none' ? '' : 'none';
+    });
+    document.getElementById('mSavePw').addEventListener('click', async ()=>{
+      const p1 = document.getElementById('mNewPw').value;
+      const p2 = document.getElementById('mNewPw2').value;
+      const err = document.getElementById('mPwErr');
+      if(p1.length < 4){ err.textContent='Passcode must be at least 4 characters.'; err.style.display='block'; return; }
+      if(p1 !== p2){ err.textContent='Passcodes don\'t match.'; err.style.display='block'; return; }
+      err.style.display='none';
+      authHash = await hashPassword(p1);
+      await storSet('auth_hash', authHash);
+      showToast('Passcode updated');
+      closeModal();
+    });
+
+    document.getElementById('mLockNow').addEventListener('click', ()=>{
+      closeModal();
+      renderLockScreen();
+    });
+
+    document.getElementById('mReset').addEventListener('click', async ()=>{
+      if(!confirm('This clears all weight, injection, and settings data on this device — including your passcode. Continue?')) return;
+      weightEntries = []; injections = []; settings = null; authHash = null;
+      lsRemove('weight_entries'); lsRemove('injections'); lsRemove('settings'); lsRemove('auth_hash');
+      closeModal();
+      init();
+    });
+  }
+  function closeModal(){ $modalRoot.innerHTML=''; }
+
+  /* ============== LOCK SCREEN ============== */
+  function renderLockScreen(){
+    $root.innerHTML = `
+      ${warningBanner()}
+      <div id="lockScreen">
+        <div class="lock-icon-wrap">${ICONS.lock}</div>
+        <h1>Progress Log</h1>
+        <p class="lead">Enter your passcode to continue.</p>
+        <input type="password" id="lockInput" autocomplete="off" placeholder="Passcode" autofocus>
+        <p class="err-msg" id="lockErr" style="display:none;"></p>
+        <button class="pill-btn" id="lockSubmit">Unlock</button>
+        <button class="reset-link" id="lockReset">Forgot passcode? Reset app</button>
+      </div>
+    `;
+    const input = document.getElementById('lockInput');
+    const submit = async ()=>{
+      const val = input.value;
+      const h = await hashPassword(val);
+      const err = document.getElementById('lockErr');
+      if(h === authHash){
+        err.style.display='none';
+        if(!settings){ renderPasswordSetup(()=>renderShell()); } else { renderShell(); }
+      } else {
+        err.textContent = 'That passcode is incorrect.';
+        err.style.display = 'block';
+        input.value = '';
+        input.focus();
+      }
+    };
+    document.getElementById('lockSubmit').addEventListener('click', submit);
+    input.addEventListener('keydown', (e)=>{ if(e.key==='Enter') submit(); });
+    document.getElementById('lockReset').addEventListener('click', async ()=>{
+      if(!confirm('This permanently deletes all weigh-ins, injections, settings, and your passcode on this device. This cannot be undone. Continue?')) return;
+      weightEntries = []; injections = []; settings = null; authHash = null;
+      lsRemove('weight_entries'); lsRemove('injections'); lsRemove('settings'); lsRemove('auth_hash');
+      init();
+    });
+  }
+
+  /* ============== PASSWORD SETUP (first run) ============== */
+  function renderPasswordSetup(onDone){
+    $root.innerHTML = `
+      ${warningBanner()}
+      <div id="onboard">
+        <h1>Set a passcode</h1>
+        <p class="lead">Choose a passcode to keep this app locked when you're not using it. There's no way to recover a forgotten passcode — only a full reset.</p>
+        <div class="form-grid">
+          <div class="field"><label>Passcode</label><input type="password" id="pNew" autocomplete="off"></div>
+          <div class="field"><label>Confirm passcode</label><input type="password" id="pNew2" autocomplete="off"></div>
+          <p class="err-msg" id="pErr" style="display:none;"></p>
+          <button class="pill-btn" id="pSave" style="margin-top:6px;">Set passcode &amp; continue</button>
+        </div>
+      </div>
+    `;
+    document.getElementById('pSave').addEventListener('click', async ()=>{
+      const p1 = document.getElementById('pNew').value;
+      const p2 = document.getElementById('pNew2').value;
+      const err = document.getElementById('pErr');
+      if(p1.length < 4){ err.textContent='Passcode must be at least 4 characters.'; err.style.display='block'; return; }
+      if(p1 !== p2){ err.textContent='Passcodes don\'t match.'; err.style.display='block'; return; }
+      err.style.display='none';
+      authHash = await hashPassword(p1);
+      await storSet('auth_hash', authHash);
+      onDone();
+    });
+  }
+
+  /* ============== ONBOARDING (first run: goals) ============== */
+  function renderOnboarding(){
+    $root.innerHTML = `
+      ${warningBanner()}
+      <div id="onboard">
+        <h1>Progress Log</h1>
+        <p class="lead">Set your starting weight and the goal you're working toward. You can change any of this later in Settings.</p>
+        <div class="form-grid">
+          <div class="field"><label>Units</label>
+            <div class="unit-toggle">
+              <button type="button" data-unit="lbs" class="active">lbs</button>
+              <button type="button" data-unit="kg">kg</button>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Starting weight</label><input type="number" step="0.1" id="oStart" placeholder="e.g. 232"></div>
+            <div class="field"><label>Starting date</label><input type="date" id="oStartDate" max="${todayISO()}" value="${todayISO()}"></div>
+          </div>
+          <div class="field"><label>Goal weight</label><input type="number" step="0.1" id="oGoal" placeholder="e.g. 195"></div>
+          <div class="field"><label>Injection interval (days)</label><input type="number" step="1" min="1" id="oInterval" value="7"></div>
+          <p class="err-msg" id="oErr" style="display:none;"></p>
+          <button class="pill-btn" id="oSave" style="margin-top:6px;">Continue</button>
+        </div>
+      </div>
+    `;
+    let unit = 'lbs';
+    document.querySelectorAll('[data-unit]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        unit = btn.dataset.unit;
+        document.querySelectorAll('[data-unit]').forEach(b=>b.classList.toggle('active', b===btn));
+      });
+    });
+    document.getElementById('oSave').addEventListener('click', async ()=>{
+      const startWeight = parseFloat(document.getElementById('oStart').value);
+      const startDate = document.getElementById('oStartDate').value;
+      const goalWeight = parseFloat(document.getElementById('oGoal').value);
+      const intervalDays = parseInt(document.getElementById('oInterval').value,10);
+      const err = document.getElementById('oErr');
+      if(isNaN(startWeight)||startWeight<=0||isNaN(goalWeight)||goalWeight<=0||!startDate||isNaN(intervalDays)||intervalDays<1){
+        err.textContent = 'Please fill in every field with valid values.';
+        err.style.display='block';
+        return;
+      }
+      err.style.display='none';
+      settings = { units: unit, startWeight: round1(startWeight), startDate, goalWeight: round1(goalWeight), intervalDays };
+      await storSet('settings', settings);
+      renderPasswordSetup(()=>renderShell());
+    });
+  }
+
+  /* ============== INIT ============== */
+  async function init(){
+    $root.innerHTML = `<div class="loading-wrap">${ICONS.spinner}<p>Loading your data…</p></div>`;
+    storageOK = testStorage();
+    const [s, w, i, ah] = await Promise.all([
+      storGet('settings'), storGet('weight_entries'), storGet('injections'), storGet('auth_hash')
+    ]);
+    settings = s;
+    weightEntries = w || [];
+    injections = i || [];
+    authHash = ah;
+
+    if(authHash){
+      renderLockScreen();
+    } else if(!settings){
+      renderOnboarding();
+    } else {
+      renderPasswordSetup(()=>renderShell());
+    }
+  }
+
+  init();
+})();
+</script>
